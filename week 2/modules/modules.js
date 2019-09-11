@@ -155,5 +155,5 @@ console.log(songsManager.addSong("sax", "https://www.youtube.com/watch?v=3JZ4pnN
 // console.log(songsManager.addSong("how long", "https://www.youtube.com/watch?v=CwfoyVa980U"))
 // console.log(songsManager.addSong("ain't me", "https://www.youtube.com/watch?v=D5drYkLiLI8"))
 
-console.log(songsManager.getSong("sax")) // should print https://www.youtube.com/watch?v=3JZ4pnNtyxQ
+console.log(songsManager.getSong("sax ")) // should print https://www.youtube.com/watch?v=3JZ4pnNtyxQ
 
