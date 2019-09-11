@@ -76,8 +76,4 @@ function shuffle(array) {
     return array;
   }
   
-  // Used like so
-  var arr = [2, 11, 37, 42];
-  arr = shuffle(arr);
-  console.log(arr);
   
