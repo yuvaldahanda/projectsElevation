@@ -31,29 +31,45 @@
 // // // //===================================================
 
 //Exercise 3
-$("body").append("<div id=div1 class=box></div>")
-$("body").append("<div id=div2 class=box></div>")
-let flag = true
-// ​
-$("div").on("mouseenter",function () {
+// $("body").append("<div id=div1 class=box></div>")
+// $("body").append("<div id=div2 class=box></div>")
+// let flag = true
+// // ​
+// $("div").on("mouseenter",function () {
 
-    if (flag) {
-        $("#div1").css("background-color", "red")
-        $("#div2").css("background-color", "green")
-        flag = false
+//     if (flag) {
+//         $("#div1").css("background-color", "red")
+//         $("#div2").css("background-color", "green")
+//         flag = false
 
-    }
-    else {
-        $("#div1").css("background-color", "green")
-        $("#div2").css("background-color", "red")
-        flag = true
+//     }
+//     else {
+//         $("#div1").css("background-color", "green")
+//         $("#div2").css("background-color", "red")
+//         flag = true
 
 
-    }
-})
-$("div").mouseout(function() {
-    $("div").css("background-color", "purple") ;
-  });
+//     }
+// })
+// $("div").mouseout(function() {
+//     $("div").css("background-color", "purple") ;
+//   });
+// $("body").append("<div class='box'>  </div> ")
+
+// $("body").append("<div class='box'>  </div> ")
+// //let flag = false // הנחה : העכבר לא על הקופסאות 
+// let flag =false    
+// $("body").on("mouseover", ".box", function()
+
+// {    
+   
+//   $(".box").css("background-color","red")
+//   $(this).css("background-color","purple")
+
+// })
+// $("div").mouseout(function() {
+//     $("div").css("background-color", "purple") ;
+//   });
 
 // // // ===================================================
 // // //                   ex4 and the last extension
