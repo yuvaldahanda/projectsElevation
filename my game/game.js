@@ -5,6 +5,8 @@ function suspendMyJsTwoSecond() { }
 
 
 
+
+
 let checkIfCardsSame = []
 let counter = 0
 $("#parent").on("click", ".box", function () {
