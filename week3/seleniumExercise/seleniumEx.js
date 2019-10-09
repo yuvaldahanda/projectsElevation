@@ -1,79 +1,100 @@
-const { Builder, By, Key } = require('selenium-webdriver');
-const path = require('chromedriver').path;
-const chrome = require('selenium-webdriver/chrome');
-let service = new chrome.ServiceBuilder(path).build();
-chrome.setDefaultService(service);
+// const { Builder, By, Key } = require('selenium-webdriver');
+// const path = require('chromedriver').path;
+// const chrome = require('selenium-webdriver/chrome');
+// let service = new chrome.ServiceBuilder(path).build();
+// chrome.setDefaultService(service);
 
 
-const driver = new Builder().forBrowser('chrome').build();
+// const driver = new Builder().forBrowser('chrome').build();
 
 
-// async function example() {
+// // async function example() {
 
-//     await driver.get('file:///C:/Users/USER.USER-TOSH/Desktop/code/bootcamp/week3/seleniumExercise/index.html');
-//     let getInput = await driver.findElement(By.id("inText"))
-//     let str="heyhey"
-//     await getInput.sendKeys(str)
-//     await driver.findElement(By.className("btn")).click()
-//     let fromBox =await driver.findElement(By.id('newbox')).getText()
+// //     await driver.get('file:///C:/Users/USER.USER-TOSH/Desktop/code/bootcamp/week3/seleniumExercise/index.html');
+// //     let getInput = await driver.findElement(By.id("inText"))
+// //     let str="heyhey"
+// //     await getInput.sendKeys(str)
+// //     await driver.findElement(By.className("btn")).click()
+// //     let fromBox =await driver.findElement(By.id('newbox')).getText()
 
-//     if(fromBox == str)
-//     {
-//       console.log("there is new div create")
-//     }
-//     else{console.log("nope we sorry there is now new div created")}
+// //     if(fromBox == str)
+// //     {
+// //       console.log("there is new div create")
+// //     }
+// //     else{console.log("nope we sorry there is now new div created")}
 
-//    setTimeout(()=>{
+// //    setTimeout(()=>{
+// //     driver.quit()
+// //   }, 2000)
+
+
+
+// // }
+
+
+// // example()
+
+
+
+// async function example(locatorType) {
+
+//   let numAge = 22
+//   let numheight = 170
+//   let numWeight = 59
+  
+//   let height
+//   let female
+//   let male
+//   let weight 
+
+
+//   await driver.get('https://www.calculator.net/bmi-calculator.html');
+  
+  
+  
+//   let getInput = await driver.findElement(By[locatorType]("cage"))
+ 
+ 
+ 
+//   await getInput.clear()
+//   await getInput.sendKeys(numAge)
+//   female = await driver.findElement(By.id("csex2"))
+//   await female.click()
+//   height = await driver.findElement(By.id("cheightmeter"))
+//   await height.clear()
+//   await height.sendKeys(numheight)
+//   weight = await driver.findElement(By.id("ckg"))
+//   await weight.clear()
+//   await weight.sendKeys(numWeight)
+
+
+//   let cli= await driver.findElement(By.xpath("//input[@value='Calculate']"))
+//   await cli.click()
+
+
+
+//   setTimeout(() => {
 //     driver.quit()
-//   }, 2000)
+//   }, 15000)
 
 
 
 // }
 
 
-// example()
+//  example("id")
 
 
+// // const getArticles = async function(){
+// //   let articles = await asyncOperation()
+// //   return articles
+// // }
 
-async function example() {
+// // const innocentFunc = async function(num){
+// //   num++
+// //   let articles = await getArticles()
+ 
+// // }
 
-  let numAge = 22
-  let numheight = 170
-  let numWeight = 59
-  
-  let height
-  let female
-  let male
-  let weight 
-
-
-  await driver.get('https://www.calculator.net/bmi-calculator.html');
-  let getInput = await driver.findElement(By.id("cage"))
-  await getInput.clear()
-  await getInput.sendKeys(numAge)
-  female = await driver.findElement(By.id("csex2"))
-  await female.click()
-  height = await driver.findElement(By.id("cheightmeter"))
-  await height.clear()
-  await height.sendKeys(numheight)
-  weight = await driver.findElement(By.id("ckg"))
-  await weight.clear()
-  await weight.sendKeys(numWeight)
-  let cli= await driver.findElement(By.xpath("//input[@value='Calculate']"))
-  await cli.click()
-  setTimeout(() => {
-    driver.quit()
-  }, 15000)
-
-
-
-}
-
-
-example()
-
-
-
-
-
+// // let x=innocentFunc(1)
+// .driver.get('https://www.youtube.com/watch?v=3vauM7axnRs')
