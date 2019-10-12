@@ -1,4 +1,11 @@
-function suspendMyJsTwoSecond() { }
+async function sleep(miliseconds) {
+  setTimeout(function(){
+    $(".box").css("background-color", "yellow")
+  },miliseconds)
+  
+  
+    
+ }
 
 
 
@@ -14,20 +21,22 @@ $("#parent").on("click", ".box", function () {
     checkIfCardsSame.push($(this).data().color)
     $(this).css("background-color", $(this).data().color)
     if (counter == 2) {
-      //  setTimeout(suspendMyJsTwoSecond, 3000);
-        if(checkIfCardsSame[0]==checkIfCardsSame[1])
-        {
+        //  setTimeout(suspendMyJsTwoSecond, 3000);
+        if (checkIfCardsSame[0] == checkIfCardsSame[1]) {
             console.log("same same")
             counter = 0
             checkIfCardsSame = []
         }
-        else{
+        else {
             console.log("keep try")
             counter = 0
             checkIfCardsSame = []
         }
+        await sleep(3000)
+
+
     }
-    
+
 
 
 })

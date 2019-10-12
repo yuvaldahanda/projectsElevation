@@ -1,168 +1,168 @@
-// // // let ages = [12, 41, 11, 10, 32, 27, 18, 19, 19, 14, 58, 41, 9]
+// // // // let ages = [12, 41, 11, 10, 32, 27, 18, 19, 19, 14, 58, 41, 9]
 
-// // // let olderThan16 = []
-// // // for(let age of ages){
-// // //   if(age > 16){
-// // //     olderThan16.push(age)
-// // //   }
+// // // // let olderThan16 = []
+// // // // for(let age of ages){
+// // // //   if(age > 16){
+// // // //     olderThan16.push(age)
+// // // //   }
+// // // // }
+
+// // // // let ages = [12, 41, 11, 10, 32, 27, 18, 19, 19, 14, 58, 41, 9]
+// // // // olderThan16 = ages.filter(function(a){ return a > 16})
+// // // // console.log(olderThan16) // prints [41, 32, 27, 18, 19, 19, 58, 41]
+// // // // console.log(2>3)
+
+// // // // const a = num => num+2
+
+// // // // console.log(a(2))
+
+
+
+// // // // //spot check 3
+// // // // let vegetables = [
+// // // //     { name: "Eggplant", color: "purple" },
+// // // //     { name: "Carrot", color: "orange" },
+// // // //     { name: "Squash", color: "orange" },
+// // // //     { name: "Tomatoe", color: "red" },
+// // // //     { name: "Onion", color: "white" },
+// // // //     { name: "Sweet Potato", color: "orange" }]
+
+
+// // // //  let onlyOrange= vegetables.filter(a => a.color.includes("orange"))
+// // // //  console.log(onlyOrange)   
+
+
+
+
+
+// // // // //spot check 4
+// // // // let people = [
+// // // //     { salary: 1300, goodPerformance: false },
+// // // //     { salary: 1500, goodPerformance: true },
+// // // //     { salary: 1200, goodPerformance: true },
+// // // //     { salary: 1700, goodPerformance: false },
+// // // //     { salary: 1600, goodPerformance: true },
+// // // // ]
+
+// // // // people.forEach(a => {
+// // // //     if(a.goodPerformance)
+// // // //     {
+// // // //         a.salary+=300
+// // // //     }
+// // // // })
+// // // // console.log(people)
+
+// // // // let poundWeights = [142, 180, 178, 121, 132]
+
+// // // // let kiloWeights = poundWeights.map(pw => Math.round(pw / 2.2))
+// // // // console.log(kiloWeights) //prints [65, 82, 81, 55, 60]
+
+
+// // // // let messagesFromDad = ["HI HONEY", "HOW WAS SCHOOL??", "DID YOU EAT TODAY?", "I CAN'T FIND THE REMOTE CONTROL"]
+
+// // // // tolower= messagesFromDad.map(a => a.toLowerCase())
+// // // // console.log(tolower)
+
+// // // // let users = [
+// // // //     {
+// // // //     "name": "Leanne Graham",
+// // // //     "address": {
+// // // //         "street": "Kulas Light", "suite": "Apt. 556", "city": "Gwenborough", "zipcode": "92998-3874",
+// // // //         "geo": { "lat": "-37.3159", "lng": "81.1496" }
+// // // //     }
+// // // // }, {
+// // // //     "name": "Ervin Howell",
+// // // //     "address": {
+// // // //         "street": "Victor Plains", "suite": "Suite 879", "city": "Wisokyburgh", "zipcode": "90566-7771",
+// // // //         "geo": { "lat": "-43.9509", "lng": "-34.4618" }
+// // // //     }
+// // // // }
+// // // // ]
+// // // // let cityAndName=users.map(u => { return { name: u.name, city: u.address.city } })
+// // // // console.log(cityAndName)
+
+// // // // let posts = [
+// // // //     {
+// // // //         id: 0, text: "I'm not here",
+// // // //         comments: [{ id: 0, text: "support that" }]
+// // // //     },
+// // // //     {
+// // // //         id: 1, text: "Find me",
+// // // //         comments: [
+// // // //             { id: 0, text: "here I am" },
+// // // //             { id: 1, text: "rock you like a hurricane" },
+// // // //             { id: 2, text: "dum dum" }]
+// // // //     },
+// // // //     {
+// // // //         id: 2, text: "Where's waldo anyway",
+// // // //         comments: [
+// // // //             { id: 0, text: "who's waldo" },
+// // // //             { id: 1, text: "he's called Effi" }]
+// // // //     },
+// // // //     {
+// // // //         id: 3, text: "Poof",
+// // // //         comments: [{ id: 0, text: "like magic" }]
+// // // //     }
+// // // // ]
+
+// // // // const findById = id => posts.find(p => p.id === id)
+// // // // //console.log(findById(1)) // prints {id: 1, text: "Find me", comments: Array(3)}
+
+
+// // // // function findCommentById(postID, commentID)
+// // // // {
+// // // //     let findId = findById(postID)
+// // // //     return findId.comments.find(c => c.id == commentID)
+// // // // }
+
+
+// // // // console.log(findCommentById(1, 0))
+
+
+// // // // let menu = [
+// // // //     { name: "Beef stew", vegetarian: false },
+// // // //     { name: "Beef sandwhich", vegetarian: false },
+// // // //     { name: "Carrot on a stick", vegetarian: true },
+// // // //     { name: "Beef eggroll", vegetarian: false },
+// // // // ]
+
+// // // // menu.some(m => m.vegetarian) //returns true
+
+
+// // // let movies = [
+// // //     { title: "Dareangel", studio: "Marvel", year: 2023 },
+// // //     { title: "Batterfly", studio: "Fox", year: 2021 },
+// // //     { title: "League of Ordinary People", studio: "Blizzard", year: 2025 },
+// // //     { title: "Thor: Ragnarok", studio: "Marvel", year: 2017 },
+// // // ]
+
+// // // let movie = movies.some(m => m.studio === "Marvel")
+// // // if (movie) {
+// // //     console.log("let go see some movie")
+// // // }
+// // // else {
+// // //     console.log("lets stay home :(")
 // // // }
 
-// // // let ages = [12, 41, 11, 10, 32, 27, 18, 19, 19, 14, 58, 41, 9]
-// // // olderThan16 = ages.filter(function(a){ return a > 16})
-// // // console.log(olderThan16) // prints [41, 32, 27, 18, 19, 19, 58, 41]
-// // // console.log(2>3)
-
-// // // const a = num => num+2
-
-// // // console.log(a(2))
-
-
-
-// // // //spot check 3
-// // // let vegetables = [
-// // //     { name: "Eggplant", color: "purple" },
-// // //     { name: "Carrot", color: "orange" },
-// // //     { name: "Squash", color: "orange" },
-// // //     { name: "Tomatoe", color: "red" },
-// // //     { name: "Onion", color: "white" },
-// // //     { name: "Sweet Potato", color: "orange" }]
-
-
-// // //  let onlyOrange= vegetables.filter(a => a.color.includes("orange"))
-// // //  console.log(onlyOrange)   
-
-
-
-
-
-// // // //spot check 4
-// // // let people = [
-// // //     { salary: 1300, goodPerformance: false },
-// // //     { salary: 1500, goodPerformance: true },
-// // //     { salary: 1200, goodPerformance: true },
-// // //     { salary: 1700, goodPerformance: false },
-// // //     { salary: 1600, goodPerformance: true },
-// // // ]
-
-// // // people.forEach(a => {
-// // //     if(a.goodPerformance)
-// // //     {
-// // //         a.salary+=300
-// // //     }
-// // // })
-// // // console.log(people)
-
-// // // let poundWeights = [142, 180, 178, 121, 132]
-
-// // // let kiloWeights = poundWeights.map(pw => Math.round(pw / 2.2))
-// // // console.log(kiloWeights) //prints [65, 82, 81, 55, 60]
-
-
-// // // let messagesFromDad = ["HI HONEY", "HOW WAS SCHOOL??", "DID YOU EAT TODAY?", "I CAN'T FIND THE REMOTE CONTROL"]
-
-// // // tolower= messagesFromDad.map(a => a.toLowerCase())
-// // // console.log(tolower)
-
-// // // let users = [
-// // //     {
-// // //     "name": "Leanne Graham",
-// // //     "address": {
-// // //         "street": "Kulas Light", "suite": "Apt. 556", "city": "Gwenborough", "zipcode": "92998-3874",
-// // //         "geo": { "lat": "-37.3159", "lng": "81.1496" }
-// // //     }
-// // // }, {
-// // //     "name": "Ervin Howell",
-// // //     "address": {
-// // //         "street": "Victor Plains", "suite": "Suite 879", "city": "Wisokyburgh", "zipcode": "90566-7771",
-// // //         "geo": { "lat": "-43.9509", "lng": "-34.4618" }
-// // //     }
+// // // let movieYear = movies.every(m => m.year > 2020)
+// // // if (movieYear) {
+// // //     console.log("its not 2020 yet")
 // // // }
-// // // ]
-// // // let cityAndName=users.map(u => { return { name: u.name, city: u.address.city } })
-// // // console.log(cityAndName)
-
-// // // let posts = [
-// // //     {
-// // //         id: 0, text: "I'm not here",
-// // //         comments: [{ id: 0, text: "support that" }]
-// // //     },
-// // //     {
-// // //         id: 1, text: "Find me",
-// // //         comments: [
-// // //             { id: 0, text: "here I am" },
-// // //             { id: 1, text: "rock you like a hurricane" },
-// // //             { id: 2, text: "dum dum" }]
-// // //     },
-// // //     {
-// // //         id: 2, text: "Where's waldo anyway",
-// // //         comments: [
-// // //             { id: 0, text: "who's waldo" },
-// // //             { id: 1, text: "he's called Effi" }]
-// // //     },
-// // //     {
-// // //         id: 3, text: "Poof",
-// // //         comments: [{ id: 0, text: "like magic" }]
-// // //     }
-// // // ]
-
-// // // const findById = id => posts.find(p => p.id === id)
-// // // //console.log(findById(1)) // prints {id: 1, text: "Find me", comments: Array(3)}
-
-
-// // // function findCommentById(postID, commentID)
-// // // {
-// // //     let findId = findById(postID)
-// // //     return findId.comments.find(c => c.id == commentID)
+// // // else {
+// // //     console.log("do somehitngn ")
 // // // }
 
 
-// // // console.log(findCommentById(1, 0))
-
-
-// // // let menu = [
-// // //     { name: "Beef stew", vegetarian: false },
-// // //     { name: "Beef sandwhich", vegetarian: false },
-// // //     { name: "Carrot on a stick", vegetarian: true },
-// // //     { name: "Beef eggroll", vegetarian: false },
+// // // let countries = [
+// // //     { name: "Greece", population: 500 },
+// // //     { name: "Namibia", population: 1200 },
+// // //     { name: "Finland", population: 100 },
+// // //     { name: "Switzerland", population: 300 },
+// // //     { name: "Peru", population: 200 }
 // // // ]
 
-// // // menu.some(m => m.vegetarian) //returns true
-
-
-// // let movies = [
-// //     { title: "Dareangel", studio: "Marvel", year: 2023 },
-// //     { title: "Batterfly", studio: "Fox", year: 2021 },
-// //     { title: "League of Ordinary People", studio: "Blizzard", year: 2025 },
-// //     { title: "Thor: Ragnarok", studio: "Marvel", year: 2017 },
-// // ]
-
-// // let movie = movies.some(m => m.studio === "Marvel")
-// // if (movie) {
-// //     console.log("let go see some movie")
-// // }
-// // else {
-// //     console.log("lets stay home :(")
-// // }
-
-// // let movieYear = movies.every(m => m.year > 2020)
-// // if (movieYear) {
-// //     console.log("its not 2020 yet")
-// // }
-// // else {
-// //     console.log("do somehitngn ")
-// // }
-
-
-// // let countries = [
-// //     { name: "Greece", population: 500 },
-// //     { name: "Namibia", population: 1200 },
-// //     { name: "Finland", population: 100 },
-// //     { name: "Switzerland", population: 300 },
-// //     { name: "Peru", population: 200 }
-// // ]
-
-// // let smallCountries = countries.filter(c => c.population < 500).map(c => c.name)
-// // console.log(smallCountries)
+// // // let smallCountries = countries.filter(c => c.population < 500).map(c => c.name)
+// // // console.log(smallCountries)
 // let users = [
 //     {
 //       "id": 1,
@@ -398,30 +398,30 @@
 
 
   
-// //   let newArrayEmailCompanyName = users.map( a => {return {email:a.email , companyName : a.company.name}})
-// //   console.log(newArrayEmailCompanyName)
+// // //   let newArrayEmailCompanyName = users.map( a => {return {email:a.email , companyName : a.company.name}})
+// // //   console.log(newArrayEmailCompanyName)
 
-// //ex2
-// //   let zipCodeStartWithFive= users.filter(a => a.address.zipcode.charAt(0)==5).map(a => a)
-// //   console.log(zipCodeStartWithFive)
+// // //ex2
+// // //   let zipCodeStartWithFive= users.filter(a => a.address.zipcode.charAt(0)==5).map(a => a)
+// // //   console.log(zipCodeStartWithFive)
 
-//   ex3
-//   let zipStartFive= users.filter(a => a.address.zipcode.charAt(0)==5).map(a => a.id)
-//   console.log(zipStartFive)
+// //   ex3
+// //   let zipStartFive= users.filter(a => a.address.zipcode.charAt(0)==5).map(a => a.id)
+// //   console.log(zipStartFive)
 
-// //   //ex4
-// //   let firstCLetter= users.filter(a => a.name.includes("C")).map(a => a.name)
-// //   console.log(firstCLetter)
+// // //   //ex4
+// // //   let firstCLetter= users.filter(a => a.name.includes("C")).map(a => a.name)
+// // //   console.log(firstCLetter)
 
-// //ex 5
-// // let nameIncludeC= users.filter(a => a.name.includes("C")).map(a => a.name)
-// // //   console.log(nameIncludeC)
+// // //ex 5
+// // // let nameIncludeC= users.filter(a => a.name.includes("C")).map(a => a.name)
+// // // //   console.log(nameIncludeC)
 
 
-// //ex6
+// // //ex6
 
-// // let ifAllLive= users.every(a => a.address.city === "South Christy")
-// // console.log(ifAllLive)
+// // // let ifAllLive= users.every(a => a.address.city === "South Christy")
+// // // console.log(ifAllLive)
 
 // // let findWomen = users
 // //             .find(f => f.address.suite ==="Apt. 950")
@@ -429,17 +429,82 @@
 
 // // console.log(findWomen)
 
-// // ex7
+// // // ex7
 
-// function yuval(user)
-// {
+// // function yuval(user)
+// // {
 
-//     user.forEach(a => {
-//         console.log(a.name+" live in city "+ a.address.city + " company "+a.company.name)
-//     });
+// //     user.forEach(a => {
+// //         console.log(a.name+" live in city "+ a.address.city + " company "+a.company.name)
+// //     });
 
-// }
+// // }
 
-// yuval(users)
+// // yuval(users)
 
-// 
+// // 
+// let findWomen = users
+//             .map(a=>a).forEach(element => element.name)
+
+// console.log(findWomen)
+
+
+// let vegetables = [
+//   { name: "Eggplant", color: "purple" },
+//   { name: "Carrot", color: "orange" },
+//   { name: "Squash", color: "orange" },
+//   { name: "Tomatoe", color: "red" },
+//   { name: "Onion", color: "white" },
+//   { name: "Sweet Potato", color: "orange" }]
+
+
+
+//   let findAllOrange = vegetables.filter( (a) => a.color =="orange")
+//   console.log(findAllOrange)
+
+
+let users = [
+  {
+  "name": "Leanne Graham",
+  "address": {
+      "street": "Kulas Light", "suite": "Apt. 556", "city": "Gwenborough", "zipcode": "92998-3874",
+      "geo": { "lat": "-37.3159", "lng": "81.1496" }
+  }
+}, {
+  "name": "Ervin Howell",
+  "address": {
+      "street": "Victor Plains", "suite": "Suite 879", "city": "Wisokyburgh", "zipcode": "90566-7771",
+      "geo": { "lat": "-43.9509", "lng": "-34.4618" }
+  }
+}
+]
+
+// let us =users.map(u => { return { name: u.name, city: u.address.city } })
+// console.log(us)
+
+
+let posts = [
+  {
+      id: 0, text: "I'm not here",
+      comments: [{ id: 0, text: "support that" }]
+  },
+  {
+      id: 1, text: "Find me",
+      comments: [
+          { id: 0, text: "here I am" },
+          { id: 1, text: "rock you like a hurricane" },
+          { id: 2, text: "dum dum" }]
+  },
+  {
+      id: 2, text: "Where's waldo anyway",
+      comments: [
+          { id: 0, text: "who's waldo" },
+          { id: 1, text: "he's called Effi" }]
+  },
+  {
+      id: 3, text: "Poof",
+      comments: [{ id: 0, text: "like magic" }]
+  }
+]
+const findById = posts.find(p => p.id == 1)
+console.log(findById) //prints {id: 1, text: "Find me", comments: Array(3)}
