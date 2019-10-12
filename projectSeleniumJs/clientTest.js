@@ -11,14 +11,18 @@ class ClientsPageTest {
    
     async clientTest(){
         await this.clientsPage.navigateToClientsPage();
-        //to move between pages
-        // await this.clientsPage.navigateToAnaPage();
-        // await this.anaPage.click()
-
-        // Implement the test here...
+        
+    }
+    async searchBy(input,searchBy){
+       if (await this.clientsPage.searchAndValidateClient(input,searchBy))
+            console.log("wow amazing everthing fine there is no bugs today :)")
+        else(
+            console.log("Worng i found at the table problem")
+        )
     }
 }   
     
 let clientPageTest = new ClientsPageTest();
 
 clientPageTest.clientTest();
+clientPageTest.searchBy("Malta","Country")

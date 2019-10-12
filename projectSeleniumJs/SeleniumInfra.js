@@ -8,11 +8,17 @@ class SelenuimInfra{
     constructor(){
         this.driver = new Builder().forBrowser('chrome').build();
     }
-
+    async sleepSec(){
+       await this.driver.sleep(1000)
+    }
     async getURL(URL){ // Open browser
         await this.driver.get(URL)
     }
 
+    async retuenDriver()
+    {
+        return this.driver
+    }
     async close(){ // Close browser
         setTimeout(()=>{
             this.driver.quit()
@@ -39,10 +45,9 @@ class SelenuimInfra{
                 }else{
                     element = await this.driver.findElement(By[locatorType](locatorValue))
                 }
-            }
-            this.driver.sleep(2000)
+            }   
             await element.click()
-            this.driver.sleep(2000)
+        
             
             console.log(`Clicked on element with ${locatorType} = ${locatorValue}`)
         }
