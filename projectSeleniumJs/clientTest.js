@@ -15,14 +15,49 @@ class ClientsPageTest {
     }
     async searchBy(input,searchBy){
        if (await this.clientsPage.searchAndValidateClient(input,searchBy))
-            console.log("wow amazing everthing fine there is no bugs today :)")
+            console.log(
+                "search by:"+searchBy+"\n"+
+                "input:"+input+"\n"+
+                "not found any bugs ")
         else(
-            console.log("Worng i found at the table problem")
+            console.log("i found at the table problem")
         )
     }
+
+    async isPersonAttrExist(arrOfPersonAttr)
+    {
+        if(await this.clientsPage.isPersonAttributeExist(arrOfPersonAttr))
+        {
+            console.log("All person attributes that you send are exist :)")
+        }
+        else{
+            console.log("Oh oh missing some attribute")
+        }
+    }
+
+    async moveTablePage(num)
+    {
+        await this.clientsPage.moveBetweenTablePages(num)
+
+        
+    }
+    async deleteUser(deleteUser,deleteBy)
+    {
+        if(await this.clientsPage.deleteClient(deleteUser,deleteBy))
+        {
+            console.log("the User delete successfully!!")
+        }
+        else{
+            console.log("User not deleted")
+        }
+    }
+
+
 }   
     
 let clientPageTest = new ClientsPageTest();
 
-clientPageTest.clientTest();
-clientPageTest.searchBy("Malta","Country")
+ clientPageTest.clientTest();
+ //clientPageTest.searchBy("esperanzamaldonado@imant.com","Email")
+// clientPageTest.isPersonAttrExist(["First Name","Last Name","Country","Email","Owner","Sold","Contact Date","Email-Type"])
+clientPageTest.deleteUser("lisamayer@imant.com","Email")
