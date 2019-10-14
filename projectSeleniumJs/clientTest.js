@@ -20,7 +20,7 @@ class ClientsPageTest {
                 "input:"+input+"\n"+
                 "not found any bugs ")
         else(
-            console.log("i found at the table problem")
+            console.log("Oh OH The input not exist")
         )
     }
 
@@ -51,13 +51,43 @@ class ClientsPageTest {
             console.log("User not deleted")
         }
     }
+    async clearField()
+    {
+        await this.clientsPage.clearEelementField()
+    }
 
-
+    async updateUser(updateUser, searchBy,updateName,updateEmail,updateCountry)
+    {
+        await this.clientsPage.updateClient(updateUser, searchBy,updateName,updateEmail,updateCountry)
+    }
+    async isDetailTheSamePopUp(user, searchBy){
+        if(await this.clientsPage.isDetailTheSamePopUp(user, searchBy))
+        {
+            console.log("the details at the popUp are the same as the table")
+        }
+        else{
+            console.log("please fix it!")
+        }
+    }
 }   
     
 let clientPageTest = new ClientsPageTest();
 
- clientPageTest.clientTest();
- //clientPageTest.searchBy("esperanzamaldonado@imant.com","Email")
+async function test()
+{
+  await clientPageTest.clientTest();
+//  await clientPageTest.searchBy("michelepetersen@imant.com","Email")
+//  await clientPageTest.clearField()
+//  await clientPageTest.searchBy("jeanriddle@imant.com","Email")
+//  await clientPageTest.clearField()
+//  await clientPageTest.searchBy("Michele","Name")
+// await clientPageTest.updateUser("Michele","Name","michele",null,"heyr")
+    await clientPageTest.isDetailTheSamePopUp("Charles Munoz", "Name")
+
+}
+//  clientPageTest.searchBy("Michele ","Name")
+//   clientPageTest.searchBy("Buchanan","Name")
 // clientPageTest.isPersonAttrExist(["First Name","Last Name","Country","Email","Owner","Sold","Contact Date","Email-Type"])
-clientPageTest.deleteUser("lisamayer@imant.com","Email")
+ //clientPageTest.deleteUser("elnorabullock@imant.com","Email")
+test()
+

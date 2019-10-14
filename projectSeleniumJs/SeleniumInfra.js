@@ -9,7 +9,7 @@ class SelenuimInfra{
         this.driver = new Builder().forBrowser('chrome').build();
     }
     async sleepSec(){
-       await this.driver.sleep(1000)
+       await this.driver.sleep(5000)
     }
     async getURL(URL){ // Open browser
         await this.driver.get(URL)
@@ -135,7 +135,7 @@ class SelenuimInfra{
             else{
                 element = await this.driver.findElement(By[locatorType](locatorValue))
             }
-            console.log(`Find element with ${locatorType} = ${locatorValue} `)
+            //console.log(`Find element with ${locatorType} = ${locatorValue} `)
         }
         catch{
             console.error(`Got error while trying to find element with ${locatorType} = ${locatorValue}`)

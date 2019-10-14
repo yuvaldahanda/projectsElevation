@@ -1,21 +1,44 @@
 class ClientsPage {
     constructor(selenium) {
         this.selenium = selenium
+        this.startTest = false
         this.personDetail = {}
         this.arrayOfPersons = []
     }
     async navigateToClientsPage() {
         await this.selenium.getURL("https://lh-crm.herokuapp.com/client")
     }
-    /*This method gets an input to search and the field to search by
-    searchBy can be: Name, Country, Email, Owner, Sold, EmailType
-    Return value: true if client exist, false otherwise
-    */
 
 
-    async isDetailTheSamePopUp()//also check if the vlaue are the same
+
+    async isDetailTheSamePopUp(user, searchBy)//check if the vlaue are the same as show at the table
     {
+        await this.openCorrectTable(user, searchBy)
+        await this.selenium.clickElement("className", "clientDetails")
 
+        let id = ["name", "country", "email"]
+        let gettingTextFromId = []
+        for (let i in id) {
+            let element = await this.selenium.findElementBy("id", id[i])
+            gettingTextFromId.push(await element.getAttribute("value"))
+
+        }
+        let name = gettingTextFromId[0].split(" ")
+        gettingTextFromId.splice(0,1)
+        gettingTextFromId.unshift(name[0], name[1])
+        let currentTable = await this._getCurrentTable()
+        let attr = ["First Name", "Last Name", "Country", "Email"]//this is the attribute that i check
+
+        for (let j in currentTable) {
+            for (let i in gettingTextFromId) {
+                if (gettingTextFromId[i] != currentTable[j]["'" + attr[i] + "'"]) {
+                    console.log("found bug at ->" + attr[i])
+                    return false
+                }
+
+            }
+        }
+        return true
     }
     async getClientDetails() {
         let arr = await this.selenium.findElementListBy("className", "clientDetails")
@@ -42,7 +65,37 @@ class ClientsPage {
 
 
 
-    async updateClient() {
+    async updateClient(updateUser, searchBy, updateName, updateEmail, updateCountry) {
+        let name = updateName.split(" ")
+        await this.openCorrectTable(updateUser, searchBy)
+        await this.selenium.clickElement("className", "clientDetails")
+        let update = [updateName, updateEmail, updateCountry] //if i want update 2 attribure or 3 or either 1
+        let id = ["name", "country", "email"]
+        let attr = ["First Name", "Last Name", "Country", "Email"]
+        for (let index in id) { //clearing fields and then isert a new input
+            if (update[index]) {
+                await this.selenium.clearElementField("id", id[index])
+                await this.selenium.write(update[index], "id", id[index])
+                await this.selenium.clickElement("xpath", "//input[@value='Update Client']")
+            }
+        }
+        let name = updateName.split(" ")
+        update = [name[0], name[1], updateEmail, updateCountry]
+        let currentTableAfterUpdate = await this._getCurrentTable() //getting the current table after update
+
+
+        //if the update that we do is not the same as the new details at the table then it return false and dont continue loop 
+        //if everything fine then it do the loop with out returning false and its mean that everthing fine and we can return true!
+        for (let j in currentTableAfterUpdate) {
+            for (let i in update) {
+                if (update[i]) { //checking if there is update that we do if  there is  a update then we check the update According to the table
+                    if (update[i] != currentTableAfterUpdate[j]["'" + attr[i] + "'"]) {
+                        return false
+                    }
+                }
+            }
+        }
+        return true
 
     }
 
@@ -86,6 +139,7 @@ class ClientsPage {
                 return false
             }
         }
+        this.startTest = true //we have to know that all attribute in there place before we start the thest
         return true
     }
     //getting the rows from table 
@@ -117,9 +171,13 @@ class ClientsPage {
             arrayOfPersons.push(this.personDetail)
             this.personDetail = {}
         }
+        let dropDownMenu = await this.selenium.findElementBy("className", "select-css")
+        await this.selenium.write("Name", null, null, dropDownMenu, null, true)
         console.table(arrayOfPersons)
         return arrayOfPersons
     }
+
+
 
     //function that open the table after insert input and search by "country","sold"....
     async openCorrectTable(input, searchBy) {
@@ -128,43 +186,52 @@ class ClientsPage {
         await this.selenium.clickElement(null, null, dropDownMenu)
         await this.selenium.write(searchBy, null, null, dropDownMenu, null, true)
         await this.selenium.clickElement(null, null, dropDownMenu)
-        await this.selenium.sleepSec()
 
     }
+    async sleep() {
+        await this.selenium.sleepSec()
+    }
 
+    async clearEelementField() {
+        this.selenium.clearElementField("xpath", "//input[@type='text']")
+    }
 
     //this function handleing the problem with search By NAME because at the table we have first name and last name attributes and we check if the input that we send is exist under this attribute
     async _isSearchByIncludeName(input, searchBy) {
-        concenateSearchBy = ["First " + searchBy, "Last " + searchBy]
+
+
+        let concenateSearchBy = ["First " + searchBy, "Last " + searchBy]
         let arrayOfPersons = []
         await this.openCorrectTable(input, searchBy)
         arrayOfPersons = await this._getCurrentTable()
-        for (let j in concenateSearchBy) {
-            for (let i in arrayOfPersons) {
-                if (arrayOfPersons[i]["'" + concenateSearchBy[j] + "'"] != input) { //this iterate over the first name and the last name and check if the vlaue that we send is exist i do this because there is problen to search by Name because Name is not an attribute at the table
-                    return false
-                }
+        for (let i in arrayOfPersons) {
+            if (!(arrayOfPersons[i]["'" + concenateSearchBy[0] + "'"].includes(input)) &&
+                !(arrayOfPersons[i]["'" + concenateSearchBy[1] + "'"].includes(input))) { //this if check if first name and last name both not include the input paramter and return false if one of them are true then we continue to loop so if we end the all loop with out geeting false that mean everting ok!  o
+                return false
             }
         }
         return true
+
     }
 
 
     //this function is searching string at the table by some attribute and check if the string is exist at the table
     async searchAndValidateClient(input, searchBy) {
+
         if (searchBy == "Name") {
-            await this._isSearchByIncludeName()
-            return
+            return this._isSearchByIncludeName(input, searchBy)
         }
         let arrayOfPersons = []
         await this.openCorrectTable(input, searchBy)
         arrayOfPersons = await this._getCurrentTable()
         for (let i in arrayOfPersons) {
-            if (arrayOfPersons[i]["'" + searchBy + "'"] != input) {
+            if (!(arrayOfPersons[i]["'" + searchBy + "'"].includes(input))) { //this is check all the lines of person if they not include the input the WE HAVE BUG! its return false,if it do all the loop with out return false then ITS AMAZAING we can return true
                 return false
             }
         }
         return true
+
+
 
     }
 
