@@ -58,7 +58,11 @@ class ClientsPageTest {
 
     async updateUser(updateUser, searchBy,updateName,updateEmail,updateCountry)
     {
-        await this.clientsPage.updateClient(updateUser, searchBy,updateName,updateEmail,updateCountry)
+        if(await this.clientsPage.updateClient(updateUser, searchBy,updateName,updateEmail,updateCountry))
+            console.log("update success !!")
+        else{
+            console.log("Failed to update")
+        }
     }
     async isDetailTheSamePopUp(user, searchBy){
         if(await this.clientsPage.isDetailTheSamePopUp(user, searchBy))

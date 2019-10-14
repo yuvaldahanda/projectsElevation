@@ -26,7 +26,7 @@ class ClientsPage {
         let name = gettingTextFromId[0].split(" ")
         gettingTextFromId.splice(0,1)
         gettingTextFromId.unshift(name[0], name[1])
-        let currentTable = await this._getCurrentTable()
+        let currentTable = await this.getCurrentTable()
         let attr = ["First Name", "Last Name", "Country", "Email"]//this is the attribute that i check
 
         for (let j in currentTable) {
@@ -81,7 +81,7 @@ class ClientsPage {
         }
         let name = updateName.split(" ")
         update = [name[0], name[1], updateEmail, updateCountry]
-        let currentTableAfterUpdate = await this._getCurrentTable() //getting the current table after update
+        let currentTableAfterUpdate = await this.getCurrentTable() //getting the current table after update
 
 
         //if the update that we do is not the same as the new details at the table then it return false and dont continue loop 
@@ -120,7 +120,7 @@ class ClientsPage {
     async isValueExistNumberOfTimes(input, searchBy, number) {
         let counter = 0
         await this.openCorrectTable(input, searchBy)
-        let arrayOfPersons = await this._getCurrentTable()
+        let arrayOfPersons = await this.getCurrentTable()
         for (let i in arrayOfPersons) {
             if (arrayOfPersons[i]["'" + searchBy + "'"] == input) {
                 counter++
@@ -133,7 +133,7 @@ class ClientsPage {
 
     //this function check if the all the attribure are exist
     async isPersonAttributeExist(arrOfAllAttribute) {
-        let rows = await this._getRowsFromTable()
+        let rows = await this.getRowsFromTable()
         for (let index in rows) {
             if (rows[index] != arrOfAllAttribute[index]) {
                 return false
@@ -143,7 +143,7 @@ class ClientsPage {
         return true
     }
     //getting the rows from table 
-    async _getRowsFromTable() {
+    async getRowsFromTable() {
         let personAttr = []
         let rows = await this.selenium.findElementListBy("className", "table-header-th")
         for (let getText of rows) {
@@ -157,11 +157,11 @@ class ClientsPage {
     //this function also get the all user detail from >showen table(only what is showen at the browser)
     //first i check that there is no problem with attribute and then i get them from table And uses them individually for each user (creating a object) 
     //and iterate over person detail and isert details to object and then push all the object wich is user to array and return this array 
-    async _getCurrentTable() {
+    async getCurrentTable() {
         let arrayOfPersons = []
         let personAttr = []
         let colums = await this.selenium.findElementListBy("className", "clientDetails")
-        personAttr = await this._getRowsFromTable()
+        personAttr = await this.getRowsFromTable()
         for (let i in colums) {
             let detailsOfPerson = await this.selenium.findElementListBy("tagName", "th", colums[i])
             for (let j in personAttr) {
@@ -203,7 +203,7 @@ class ClientsPage {
         let concenateSearchBy = ["First " + searchBy, "Last " + searchBy]
         let arrayOfPersons = []
         await this.openCorrectTable(input, searchBy)
-        arrayOfPersons = await this._getCurrentTable()
+        arrayOfPersons = await this.getCurrentTable()
         for (let i in arrayOfPersons) {
             if (!(arrayOfPersons[i]["'" + concenateSearchBy[0] + "'"].includes(input)) &&
                 !(arrayOfPersons[i]["'" + concenateSearchBy[1] + "'"].includes(input))) { //this if check if first name and last name both not include the input paramter and return false if one of them are true then we continue to loop so if we end the all loop with out geeting false that mean everting ok!  o
@@ -223,7 +223,7 @@ class ClientsPage {
         }
         let arrayOfPersons = []
         await this.openCorrectTable(input, searchBy)
-        arrayOfPersons = await this._getCurrentTable()
+        arrayOfPersons = await this.getCurrentTable()
         for (let i in arrayOfPersons) {
             if (!(arrayOfPersons[i]["'" + searchBy + "'"].includes(input))) { //this is check all the lines of person if they not include the input the WE HAVE BUG! its return false,if it do all the loop with out return false then ITS AMAZAING we can return true
                 return false
