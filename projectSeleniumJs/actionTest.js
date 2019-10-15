@@ -25,9 +25,9 @@ class ActionTest{
             console.log("user does not exist at the table :(")
         }
     }
-    async update()
+    async update(updateName, updateOwner, emailType)
     {
-       if(await this.actionPage.update())
+       if(await this.actionPage.update(updateName, updateOwner, emailType))
        {
            console.log("user successfuly Updated")
        }
@@ -40,4 +40,4 @@ class ActionTest{
 let actionTest= new ActionTest()
 actionTest.clientTest()
 //actionTest.addClient("pppppp","ppasdasp","rorasdasdo","pppadsapp","asdasdad")
-actionTest.update()
+actionTest.update("asd","ruruu","hey")

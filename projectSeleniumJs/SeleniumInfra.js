@@ -9,7 +9,7 @@ class SelenuimInfra{
         this.driver = new Builder().forBrowser('chrome').build();
     }
     async sleepSec(){
-       await this.driver.sleep(5000)
+       await this.driver.sleep(100)
     }
     async getURL(URL){ // Open browser
         await this.driver.get(URL)

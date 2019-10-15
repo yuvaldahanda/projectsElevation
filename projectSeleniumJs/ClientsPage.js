@@ -102,18 +102,18 @@ class ClientsPage {
 
 
     //this function check switch between pages
-    async moveBetweenTablePages(numOfClicking) {
+    async getPersonsFromEachPage() {
 
+        let arrayOfpersonFromEachPage =[]
         let pages = await this.selenium.findElementListBy("className", "page")
-        for (let i = 0; i < numOfClicking; i++) {
+        let startPage = await this.selenium.getTextFromElement(null,null,pages[0])
+        let endPage = await this.selenium.getTextFromElement(null,null,pages[2])
+        for (let i = startPage; i < endPage ; i++) {
             await this.selenium.clickElement("xpath", "//img[@name='next']")
-        }
-        numOfClicking += 1 //because pages start at 1
-        let numberAfterClick = await this.selenium.getTextFromElement(null, null, pages[0])
-        if (numOfClicking != numberAfterClick)
-            return false
+            arrayOfpersonFromEachPage.push(await this.getCurrentTable())
 
-        return true
+        }
+        return arrayOfpersonFromEachPage
     }
 
     //function that check if the value that we send is showen number of times that we know he should apper

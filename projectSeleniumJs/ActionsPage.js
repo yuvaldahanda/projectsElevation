@@ -46,13 +46,20 @@ class ActionPage {
 
     }
 
-    async update(updateName, updateOwner, emailType) {
+    async update(updateName, updateOwner, emailType, sold) {
         let inputLists = ["names", "owner", "emailType"]
         let update = [updateName, updateOwner, emailType]
         for (let i in inputLists) {
             if (update[i]) {
                 await this.selenium.write(update[i], "xpath", "//input[@list='" + inputLists[i] + "']")
+                if (i==1 && update[i])
+                    await this.selenium.clickElement("xpath", "//input[@value ='Transfer']")
+                if (i==2 && update[i])
+                    await this.selenium.clickElement("xpath", "//input[@value ='Send']")
             }
+        }
+        if (sold) {
+            await this.selenium.clickElement("xpath", "//input[@value='Sold']")
         }
         if (!await this.selenium.isElementExists("className", "error-pop-up")) {
             await this.clientPage.navigateToClientsPage()

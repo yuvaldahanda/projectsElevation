@@ -35,12 +35,7 @@ class ClientsPageTest {
         }
     }
 
-    async moveTablePage(num)
-    {
-        await this.clientsPage.moveBetweenTablePages(num)
-
-        
-    }
+    
     async deleteUser(deleteUser,deleteBy)
     {
         if(await this.clientsPage.deleteClient(deleteUser,deleteBy))
@@ -73,6 +68,7 @@ class ClientsPageTest {
             console.log("please fix it!")
         }
     }
+    
 }   
     
 let clientPageTest = new ClientsPageTest();
@@ -86,7 +82,8 @@ async function test()
 //  await clientPageTest.clearField()
 //  await clientPageTest.searchBy("Michele","Name")
 // await clientPageTest.updateUser("Michele","Name","michele",null,"heyr")
-    await clientPageTest.isDetailTheSamePopUp("Charles Munoz", "Name")
+    // await clientPageTest.isDetailTheSamePopUp("Charles Munoz", "Name")
+   
 
 }
 //  clientPageTest.searchBy("Michele ","Name")
