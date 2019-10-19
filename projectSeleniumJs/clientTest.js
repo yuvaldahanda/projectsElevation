@@ -1,6 +1,7 @@
 const BasePage = require("./BasePage");
 const ClientsPage = require("./ClientsPage")
 
+
 class ClientsPageTest {
     constructor() {
         this.testSelenium = new BasePage().selenium
@@ -18,23 +19,11 @@ class ClientsPageTest {
             console.log(
                 "search by:"+searchBy+"\n"+
                 "input:"+input+"\n"+
-                "not found any bugs ")
+                "WOW AMAZING all the lines include -> "+input+" at the table")
         else(
             console.log("Oh OH The input not exist")
         )
     }
-
-    async isPersonAttrExist(arrOfPersonAttr)
-    {
-        if(await this.clientsPage.isPersonAttributeExist(arrOfPersonAttr))
-        {
-            console.log("All person attributes that you send are exist :)")
-        }
-        else{
-            console.log("Oh oh missing some attribute")
-        }
-    }
-
     
     async deleteUser(deleteUser,deleteBy)
     {
@@ -53,7 +42,7 @@ class ClientsPageTest {
 
     async updateUser(updateUser, searchBy,updateName,updateEmail,updateCountry)
     {
-        if(await this.clientsPage.updateClient(updateUser, searchBy,updateName,updateEmail,updateCountry))
+        if(await this.clientsPage.updateClientAtClientPage(updateUser, searchBy,updateName,updateEmail,updateCountry))
             console.log("update success !!")
         else{
             console.log("Failed to update")
@@ -68,27 +57,50 @@ class ClientsPageTest {
             console.log("please fix it!")
         }
     }
+    async isPopExist()
+    {
+        if(await this.clientsPage.isPopUpExistAfterClick())
+        {
+            console.log("popUp exist!")
+        }
+        else{
+            console.log("popUp not exist")
+        }
+    }
+    async moveBetweenPages(clickNext,clickPrevious,numOfPageAfterClicking)
+    {
+        if(await this.clientsPage.isMoveBetweenPages(clickNext,clickPrevious,numOfPageAfterClicking))
+        {
+            console.log("Pass:Pages can be swapped smoothly !")
+        }
+        else{
+            console.log("Fail:Pages canot be swapped smoothly")
+        }
+    }
     
 }   
     
-let clientPageTest = new ClientsPageTest();
+let clientPageTest = new ClientsPageTest()
 
-async function test()
+async function functionalTest()
 {
   await clientPageTest.clientTest();
-//  await clientPageTest.searchBy("michelepetersen@imant.com","Email")
-//  await clientPageTest.clearField()
+
+  //await clientPageTest.moveBetweenPages(6,4,3)
+   await clientPageTest.isPopExist()
+// await clientPageTest.isDetailTheSamePopUp("Finch Robinson","Name")
+//   await clientPageTest.deleteUser("123","Name")
+//  await clientPageTest.updateUser("Gross Paul","Name","Gross Paull",null,"brock@gmail.com")
+//await clientPageTest.isPersonAttrExist(["First Name","Owner1","Last Name"])
+//await clientPageTest.searchBy("yes","Sold")
 //  await clientPageTest.searchBy("jeanriddle@imant.com","Email")
-//  await clientPageTest.clearField()
 //  await clientPageTest.searchBy("Michele","Name")
 // await clientPageTest.updateUser("Michele","Name","michele",null,"heyr")
-    // await clientPageTest.isDetailTheSamePopUp("Charles Munoz", "Name")
-   
+// await clientPageTest.isDetailTheSamePopUp("Charles Munoz", "Name")
+// await clientPageTest.updateUser("berg hobbs","Name","berg HOBBS","berg@gmail.com","malta2")
+
 
 }
-//  clientPageTest.searchBy("Michele ","Name")
-//   clientPageTest.searchBy("Buchanan","Name")
-// clientPageTest.isPersonAttrExist(["First Name","Last Name","Country","Email","Owner","Sold","Contact Date","Email-Type"])
- //clientPageTest.deleteUser("elnorabullock@imant.com","Email")
-test()
+
+functionalTest()
 
