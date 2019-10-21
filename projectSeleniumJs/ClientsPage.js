@@ -61,6 +61,25 @@ class ClientsPage {
 
     }
 
+    async getTextByAttribute(searchBy) {
+        let stringsOfSearchBy =[]
+        let personDetail = []
+        let pages = await this.getPagesNumber()
+        for (let i = pages[0]; i <= pages[1]; i++) {
+            let arrayOfPersons = await this.selenium.findElementListBy("className", "clientDetails")
+            for (let j in arrayOfPersons) {
+                personDetail.push(await this.selenium.findElementListBy("tagName", "th", arrayOfPersons[j]))
+                stringsOfSearchBy.push(await this.selenium.getTextFromElement(null,null,personDetail[j][this.table[searchBy]]))
+                
+            }
+            await this.selenium.clickElement("xpath", "//img[@name='next']")
+        }
+
+        return stringsOfSearchBy
+
+
+    }
+
 
     //this function get the current table that open but with out getting the text inside this is because if i want check name exist in specific attribute so i dont need to get all the text from line (its increase the speed of searching)
     async getCurrentTableWithOutText() {
@@ -70,14 +89,14 @@ class ClientsPage {
 
         for (let i = pages[0]; i <= pages[1]; i++) {
             let arrayOfPersons = await this.selenium.findElementListBy("className", "clientDetails")
-            for (let i in arrayOfPersons) {
-                personDetail.push(await this.selenium.findElementListBy("tagName", "th", arrayOfPersons[i]))
-                arrayOfTh.push(personDetail)
+            for (let j in arrayOfPersons) {
+                personDetail.push(await this.selenium.findElementListBy("tagName", "th", arrayOfPersons[j]))
+                
             }
             await this.selenium.clickElement("xpath", "//img[@name='next']")
         }
 
-        return arrayOfTh
+        return personDetail
 
     }
 
@@ -101,7 +120,7 @@ class ClientsPage {
 
         for (let j in currentTable) {
             for (let i in gettingTextFromPopUp) {
-                if (gettingTextFromPopUp[i] != await this._getTextFromSpecificAttr(currentTable[j], attr[i])) {
+                if (gettingTextFromPopUp[i] != await this.getTextFromSpecificAttr(currentTable[j], attr[i])) {
                     console.log("found bug at ->" + attr[i])
                     return false
                 }
@@ -160,7 +179,7 @@ class ClientsPage {
         for (let j in currentTableAfterUpdate) {
             for (let i in update) {
                 if (update[i]) { //checking if there is update that we do if  there is  a update then we check the update According to the table
-                    if (update[i] != await this._getTextFromSpecificAttr(currentTableAfterUpdate[j], attr[i])) {
+                    if (update[i] != await this.getTextFromSpecificAttr(currentTableAfterUpdate[j], attr[i])) {
                         return false
                     }
                 }
@@ -212,8 +231,8 @@ class ClientsPage {
         return arrayOfPersons
     }
 
-    async _getTextFromSpecificAttr(arrayOfPersons, searchBy) {
-        return await this.selenium.getTextFromElement(null, null, arrayOfPersons[0][this.table[searchBy]])
+    async getTextFromSpecificAttr(arrayOfPersons, searchBy) {
+        return await this.selenium.getTextFromElement(null, null, arrayOfPersons[this.table[searchBy]])
     }
 
 
@@ -241,8 +260,8 @@ class ClientsPage {
         let concatenateFnameLname
 
         for (let i in arrayOfPersons) {
-            concatenateFnameLname = await this._getTextFromSpecificAttr(arrayOfPersons[i], concenateSearchBy[0]) +
-                " " + await this._getTextFromSpecificAttr(arrayOfPersons[i], concenateSearchBy[1])//concenate first name and last name from table of each line and check if the input does not exist at the table . if its return false its mean we have a line that apper after search and the input we search for is not there its a bug!
+            concatenateFnameLname = await this.getTextFromSpecificAttr(arrayOfPersons[i], concenateSearchBy[0]) +
+                " " + await this.getTextFromSpecificAttr(arrayOfPersons[i], concenateSearchBy[1])//concenate first name and last name from table of each line and check if the input does not exist at the table . if its return false its mean we have a line that apper after search and the input we search for is not there its a bug!
             concatenateFnameLname = concatenateFnameLname.toLowerCase();
             if (!concatenateFnameLname.includes(input)) {
                 console.log("A line did appear after search, but we didn't find what we were looking for at this line\n line:" + i + " its a bug!!")
@@ -268,7 +287,7 @@ class ClientsPage {
                 return this._isSearchByIncludeName(input, searchBy, arrayOfPersons)
             }
             for (let i in arrayOfPersons) {
-                let string = await this._getTextFromSpecificAttr(arrayOfPersons[i], searchBy)
+                let string = await this.getTextFromSpecificAttr(arrayOfPersons[i], searchBy)
                 string = string.toLowerCase()
                 if (!string.includes(input)) {
                     console.log("A line did appear after search, but we didn't find what we were looking for at this line\n line:" + i + " its a bug!!")

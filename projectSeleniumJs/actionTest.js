@@ -3,70 +3,81 @@ const ActionPage = require("./ActionsPage")
 const ClientPage = require("./ClientsPage")
 
 
-class ActionTest{
+class ActionTest {
 
-    constructor()
-    {
+    constructor() {
         this.testSelenium = new BasePage().selenium
-        this.actionPage = new ActionPage(this.testSelenium) 
-        this.clientPage =new ClientPage(this.testSelenium)
-        
+        this.actionPage = new ActionPage(this.testSelenium)
+        this.clientPage = new ClientPage(this.testSelenium)
+
     }
 
-    
-    async actionTest(){
+
+    //nevigate to action page
+    async actionTest() {
         await this.actionPage.navigateToActionPage();
-        
+
     }
-    async addClient(firstName,lastName,country,owner,email)
-    {
-        if(await this.actionPage.addClient(firstName,lastName,country,owner,email))
-        {
+    //function that add client to the table
+    async addClient(firstName, lastName, country, owner, email) {
+            await this.actionPage.addClient(firstName, lastName, country, owner, email)
             await this.clientPage.navigateToClientsPage()
-            if(await this.clientPage.searchAndValidateClient(email,"Email"))
-            {
+            if (await this.clientPage.searchAndValidateClient(email, "Email")) {
                 console.log("user update successufuly!!!")
             }
-            else{
+            else {
                 console.log("The user does add at the action page, but it does not appear in the table")
             }
-        }
-        else{
-            console("there is missing details")
-        }
-    
     }
-    async update(updateName, updateOwner, emailType)
-    {
-        let updateDetails={"Name":updateName, "Owner":updateOwner, "Email-Type":emailType}
+    //function that update the user owner or email type or both
+    async update(updateName, updateOwner, emailType) {
+        let updateDetails = { "Name": updateName, "Owner": updateOwner, "Email-Type": emailType }
         let keysOfUpdate = Object.keys(updateDetails)
-       if(await this.actionPage.update(updateName, updateOwner, emailType))
-       {
-
-        
-            for(let i in keysOfUpdate)
-            {
-                if(updateDetails[keysOfUpdate[i]])
-                {
+        await this.actionPage.update(updateName, updateOwner, emailType)
+            for (let i in keysOfUpdate) {
+                if (updateDetails[keysOfUpdate[i]]) {
                     await this.clientPage.navigateToClientsPage()
-                    if(await this.clientPage.searchAndValidateClient(updateDetails[keysOfUpdate[i]],keysOfUpdate[i]))
-                    {
+                    if (await this.clientPage.searchAndValidateClient(updateDetails[keysOfUpdate[i]], keysOfUpdate[i])) {
                         console.log("user updates successfully!!!")
                     }
-                    else{
+                    else {
                         console.log("user update at action page but not at the table")
                     }
 
                 }
             }
-       }
-       else{
-            console.log("missing some details at action page")
-       }
+      
     }
 }
 
-let actionTest= new ActionTest()
-actionTest.actionTest()
-actionTest.addClient("pppppp","ppasdasp","rorasdasdo","pppadsapp","asdasdad")
-actionTest.update("Mendoza Lott","Mendoza Lott","B")
+let actionTest = new ActionTest()
+
+
+async function functionalTest() {
+    await actionTest.actionTest()
+    await actionTest.addClient("martin", "rodriges", "malta", "Mendoza Lott", "martin@gmail.com")
+    await actionTest.update("Mendoza Lott", "Mendoza Lott", "B")
+    await actionTest.update("Mendoza Lott", "martin rodriges", "D")
+    await actionTest.update("Mendoza Lott", "martin rodriges", "A")
+}
+
+async function negativeTest() {
+    await test.analyticTest() 
+    await actionTest.addClient(" ", "rodriges", "malta", "Mendoza Lott", "martin@gmail.com")
+    await actionTest.addClient(" ", " ", " ", " ", " ")
+    await actionTest.addClient()
+    await actionTest.update("Mendoza Lott", "Mendoza Lott", "B")
+
+
+}
+async function stability() {
+    await test.analyticTest()
+    for (let i = 0; i < 10; i++)
+    await actionTest.addClient("martin", "rodriges", "malta", "Mendoza Lott", "martin@gmail.com")
+    for (let i = 0; i < 10; i++)
+    await actionTest.update("Mendoza Lott", "martin rodriges", "D")
+}
+
+functionalTest()
+negativeTest()
+stability()

@@ -1,43 +1,45 @@
-const ClientPage = require("./ClientsPage")
+
 
 class analyticPage {
     constructor(selenium) {
         this.selenium = selenium
-        this.clientPage = new ClientPage(this.selenium)
     }
 
-    async navigateToClientsPage() {
+    async navigateToAnalyticsPage() {
         await this.selenium.getURL("https://lh-crm.herokuapp.com/analytics")
+        await this.selenium.waitUntilElementExist("className", "badge-val")
     }
-    async getMostFrequentElement(array) {
-
-
-        let countWord ={}
-        let counter = 0
-        for (let i in array) {
-            for (let i in array) {
-                if (!(array[i] in countWord))
-                    if (array[i] == array[i+1]) {
-                        countWord.push(array[i])
-                        counter++
-                    }
-                    countWord["'"+array[i]+"'"] = counter        
-            }
-            
-
+   
+   
+    //private function that gettind the index of value from action page and get the text from that value 
+    //the function wait that there will be text at the value And once there is text its return the text
+    async _getBadgeValue(i)
+    {
+        let time = 0
+        let timeToEndLoop=250
+        let text = null
+        let array = await this.selenium.findElementListBy("className", "badge-val")
+        while (time < timeToEndLoop) {
+                text = await this.selenium.getTextFromElement(null, null, array[i])
+                if (text != 0) 
+                    return text   
+            time++
         }
-
     }
-
+   
+    //sending the email senet index to get the badge value
+    async getEmailSent() {
+            return this._getBadgeValue(1)
+    }
+     //sending the outstanding client index the get the badge value
+    async getOutStandingClient()
+    {
+        return this._getBadgeValue(2)
+    }
+    //getting the hottest country that appear at analytic page
     async getHottestCountry() {
-        let mostSeenInPage = []
-        let countryArr = []
-        await this.clientPage.navigateToClientsPage()
-        let values = await this.clientPage.getValuesPageByAttr("Country")
+        return this._getBadgeValue(3)
 
-        for (let i in values) {
-            mostSeenInPage.push(await this.getMostFrequentElement(values[i]))
-        }
     }
 
 }

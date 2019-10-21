@@ -23,7 +23,7 @@ class SelenuimInfra {
             this.driver.quit()
         }, 1000)
     }
-
+   
     async waitUntilElementExist(locatorType, locatorValue) {
         try {
             if (await this.driver.wait(until.elementLocated(By[locatorType](locatorValue)), 5000))
