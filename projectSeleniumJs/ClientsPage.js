@@ -25,13 +25,13 @@ class ClientsPage {
 
     async isPopUpExistAfterClick() {
 
-       await this.selenium.clickElement("className", "clientDetails")
-       return await this.selenium.waitUntilElementExist("className", "details-pop-up")
-       // return await this.selenium.isElementExists("className", "details-pop-up")
+        await this.selenium.clickElement("className", "clientDetails")
+        return await this.selenium.waitUntilElementExist("className", "details-pop-up")
+        // return await this.selenium.isElementExists("className", "details-pop-up")
 
     }
 
-    async isMoveBetweenPages(clickNext, clickPrevious,numOfPageAfterClicking) {
+    async isMoveBetweenPages(clickNext, clickPrevious, numOfPageAfterClicking) {
 
         if (clickNext)
             for (let i = 1; i <= clickNext; i++) {
@@ -41,14 +41,13 @@ class ClientsPage {
             for (let j = 1; j <= clickPrevious; j++) {
                 await this.selenium.clickElement("xpath", "//img[@name='previous']")
             }
-            let pages = await this.getPagesNumber()
-            if(numOfPageAfterClicking == pages[0] )
-            {
-                return true
-            }
-            else{
-                return false
-            }
+        let pages = await this.getPagesNumber()
+        if (numOfPageAfterClicking == pages[0]) {
+            return true
+        }
+        else {
+            return false
+        }
     }
 
     async getPagesNumber() {
@@ -62,15 +61,15 @@ class ClientsPage {
     }
 
     async getTextByAttribute(searchBy) {
-        let stringsOfSearchBy =[]
+        let stringsOfSearchBy = []
         let personDetail = []
         let pages = await this.getPagesNumber()
         for (let i = pages[0]; i <= pages[1]; i++) {
             let arrayOfPersons = await this.selenium.findElementListBy("className", "clientDetails")
             for (let j in arrayOfPersons) {
                 personDetail.push(await this.selenium.findElementListBy("tagName", "th", arrayOfPersons[j]))
-                stringsOfSearchBy.push(await this.selenium.getTextFromElement(null,null,personDetail[j][this.table[searchBy]]))
-                
+                stringsOfSearchBy.push(await this.selenium.getTextFromElement(null, null, personDetail[j][this.table[searchBy]]))
+
             }
             await this.selenium.clickElement("xpath", "//img[@name='next']")
         }
@@ -91,7 +90,7 @@ class ClientsPage {
             let arrayOfPersons = await this.selenium.findElementListBy("className", "clientDetails")
             for (let j in arrayOfPersons) {
                 personDetail.push(await this.selenium.findElementListBy("tagName", "th", arrayOfPersons[j]))
-                
+
             }
             await this.selenium.clickElement("xpath", "//img[@name='next']")
         }
@@ -281,24 +280,22 @@ class ClientsPage {
         input = input.toLowerCase()
         let arrayOfPersons = []
         await this.openCorrectTable(input, searchBy)
-        arrayOfPersons = await this.getCurrentTableWithOutText()
-        if (arrayOfPersons.length) {
+
+        let arrayOfStrings = await this.getTextByAttribute(searchBy)
+        if (arrayOfStrings.length) {
             if (searchBy == "Name") {
                 return this._isSearchByIncludeName(input, searchBy, arrayOfPersons)
             }
-            for (let i in arrayOfPersons) {
-                let string = await this.getTextFromSpecificAttr(arrayOfPersons[i], searchBy)
-                string = string.toLowerCase()
-                if (!string.includes(input)) {
-                    console.log("A line did appear after search, but we didn't find what we were looking for at this line\n line:" + i + " its a bug!!")
-                    return false
-                }
 
+            for (let i in arrayOfStrings) {
+                if (!arrayOfStrings[i].toLowerCase().includes(input))
+                    return false
             }
         }
         else {
             return false
         }
+
         return true
     }
 

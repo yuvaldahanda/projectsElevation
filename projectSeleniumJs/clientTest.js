@@ -90,9 +90,9 @@ async function functionalTest() {
     // await clientPageTest.deleteUser("123","Name")
     // await clientPageTest.updateUser("Gross Paul","Name","Gross Paull",null,"brock@gmail.com")
     // await clientPageTest.isPersonAttrExist(["First Name","Owner1","Last Name"])
-    // await clientPageTest.searchBy("yes","Sold")
+   //  await clientPageTest.searchBy("yes","Sold")
     // await clientPageTest.searchBy("jeanriddle@imant.com","Email")
-    // await clientPageTest.searchBy("Michele","Name")
+      await clientPageTest.searchBy("Mi22che22le22222","Name")
     // await clientPageTest.updateUser("Michele","Name","michele",null,"heyr")
     // await clientPageTest.isDetailTheSamePopUp("Charles Munoz", "Name")
     // await clientPageTest.updateUser("berg hobbs","Name","berg HOBBS","berg@gmail.com","malta2")
@@ -119,5 +119,5 @@ async function stability() {
 }
 
 functionalTest()
-negativeTest()
-stability()
+// negativeTest()
+// stability()

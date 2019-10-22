@@ -2,6 +2,8 @@ const BasePage = require("./BasePage");
 const AnalitycPage = require("./analyticPage")
 const ClientPage = require('./ClientsPage')
 const ActionPage = require('./ActionsPage')
+const Logger = require('../logger')
+
 
 class AnalyticTest {
     constructor() {
@@ -9,9 +11,11 @@ class AnalyticTest {
         this.analyticsPage = new AnalitycPage(this.testSelenium)
         this.clientPage = new ClientPage(this.testSelenium)
         this.actionPage = new ActionPage(this.testSelenium)
+        this.logger = new Logger().logger
     }
 
     async analyticTest() {
+        
         await this.analyticsPage.navigateToAnalyticsPage()
     }
 
@@ -102,7 +106,7 @@ let test = new AnalyticTest()
 async function functionalTest() {
 
     await test.analyticTest()
-    await test.getFrequentWordBySearchBy("yes","Sold","Country")
+    // await test.getFrequentWordBySearchBy("yes","Sold","Country")
     // await test.hottestCountry()
     // await test.emailSent("Shauna Lindsay", "B")
     // await test.outStandingClient("Maynard Mcintosh", true) //true mean decleard as sold
