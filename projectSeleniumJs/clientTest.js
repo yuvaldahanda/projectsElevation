@@ -1,11 +1,14 @@
 const BasePage = require("./BasePage");
 const ClientsPage = require("./ClientsPage")
-
+const Logger = require('../logger')
 
 class ClientsPageTest {
-    constructor() {
+    constructor(name) {
+        this.logger = new Logger(name).logger
         this.testSelenium = new BasePage().selenium
-        this.clientsPage = new ClientsPage(this.testSelenium)
+        this.clientsPage = new ClientsPage(this.testSelenium,this.logger)
+        
+        
         // this.anaPage = new analyticspage(this.testSelenium) // to move between pages
         // if your test uses more pages, you will have to inisiate them here, in the constractor
     }
@@ -25,6 +28,7 @@ class ClientsPageTest {
         else (
             console.log("Oh OH The input not exist")
         )
+      await this.clientsPage.clearEelementField()
     }
 
     //search user and then delete him
@@ -35,11 +39,9 @@ class ClientsPageTest {
         else {
             console.log("User not deleted")
         }
-    }
-    //clear fields
-    async clearField() {
         await this.clientsPage.clearEelementField()
     }
+    
 
     //update user details
     async updateUser(updateUser, searchBy, updateName, updateEmail, updateCountry) {
@@ -48,6 +50,8 @@ class ClientsPageTest {
         else {
             console.log("Failed to update")
         }
+        await this.clientsPage.clearEelementField()
+       
     }
     // Is the data in the table the same as the pop-up message
     async isDetailTheSamePopUp(user, searchBy) {
@@ -57,6 +61,7 @@ class ClientsPageTest {
         else {
             console.log("please fix it!")
         }
+        await this.clientsPage.clearEelementField()
     }
     //checking if the pop up exist aftr click
     async isPopUpExist() {
@@ -66,6 +71,7 @@ class ClientsPageTest {
         else {
             console.log("popUp not exist")
         }
+        await this.clientsPage.clearEelementField()
     }
     //check if we can move between pages
     async moveBetweenPages(clickNext, clickPrevious, numOfPageAfterClicking) {
@@ -75,11 +81,12 @@ class ClientsPageTest {
         else {
             console.log("Fail:Pages canot be swapped smoothly")
         }
+        await this.clientsPage.clearEelementField()
     }
 
 }
 
-let clientPageTest = new ClientsPageTest()
+let clientPageTest = new ClientsPageTest("clientTestResults")
 
 async function functionalTest() {
     await clientPageTest.clientTest();
@@ -90,11 +97,13 @@ async function functionalTest() {
     // await clientPageTest.deleteUser("123","Name")
     // await clientPageTest.updateUser("Gross Paul","Name","Gross Paull",null,"brock@gmail.com")
     // await clientPageTest.isPersonAttrExist(["First Name","Owner1","Last Name"])
-   //  await clientPageTest.searchBy("yes","Sold")
+    // await clientPageTest.searchBy("yes","Sold")
     // await clientPageTest.searchBy("jeanriddle@imant.com","Email")
-      await clientPageTest.searchBy("Mi22che22le22222","Name")
-    // await clientPageTest.updateUser("Michele","Name","michele",null,"heyr")
-    // await clientPageTest.isDetailTheSamePopUp("Charles Munoz", "Name")
+    // await clientPageTest.searchBy("jeanriddle@imant.com","Email")
+    // await clientPageTest.searchBy("bubu","Email")
+    // await clientPageTest.searchBy("Mi22che22le22222","Name")
+   // await clientPageTest.updateUser("Michele","Name","michele",null,"heyr")
+        await clientPageTest.isDetailTheSamePopUp("Sherri Pace", "Name")
     // await clientPageTest.updateUser("berg hobbs","Name","berg HOBBS","berg@gmail.com","malta2")
 
 

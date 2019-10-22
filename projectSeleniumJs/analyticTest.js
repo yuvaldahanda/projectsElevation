@@ -11,21 +11,21 @@ class AnalyticTest {
         this.analyticsPage = new AnalitycPage(this.testSelenium)
         this.clientPage = new ClientPage(this.testSelenium)
         this.actionPage = new ActionPage(this.testSelenium)
-        this.logger = new Logger().logger
+        this.logger = new Logger("Test1").logger
+    
     }
 
     async analyticTest() {
-        
         await this.analyticsPage.navigateToAnalyticsPage()
     }
 
     //algorothim to find the most frequent word in array
     async mostFrequentWord(arrayOfWords) {
-        var max = 1;
-        var counter = 0;
-        var item;
-        for (var i = 0; i < arrayOfWords.length; i++) {
-            for (var j = i; j < arrayOfWords.length; j++) {
+        let max = 1;
+        let counter = 0;
+        let item;
+        for (let i = 0; i < arrayOfWords.length; i++) {
+            for (let j = i; j < arrayOfWords.length; j++) {
                 if (arrayOfWords[i] == arrayOfWords[j])
                     counter++;
                 if (max < counter) {

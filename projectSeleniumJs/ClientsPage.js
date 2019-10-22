@@ -2,7 +2,8 @@
 
 
 class ClientsPage {
-    constructor(selenium) {
+    constructor(selenium,logger) {
+        this.logger=logger
         this.selenium = selenium
         this.table = {
             'First Name': 0,
@@ -102,31 +103,27 @@ class ClientsPage {
 
     async isDetailTheSamePopUp(user, searchBy)//check if the vlaue are the same as show at the table
     {
-        let attr = ["First Name", "Last Name", "Country", "Email"]//this is the attribute that i check
-        let id = ["name", "country", "email"]
-        let gettingTextFromPopUp = []
-        await this.openCorrectTable(user, searchBy)
-        await this.selenium.clickElement("className", "clientDetails")
-        for (let i in id) {
-            let element = await this.selenium.findElementBy("id", id[i])
-            gettingTextFromPopUp.push(await element.getAttribute("value"))
-        }
-        let name = gettingTextFromPopUp[0].split(" ")
-        gettingTextFromPopUp.splice(0, 1)
-        gettingTextFromPopUp.unshift(name[0], name[1])
-        let currentTable = await this.getCurrentTableWithOutText()
-
-
-        for (let j in currentTable) {
-            for (let i in gettingTextFromPopUp) {
-                if (gettingTextFromPopUp[i] != await this.getTextFromSpecificAttr(currentTable[j], attr[i])) {
-                    console.log("found bug at ->" + attr[i])
-                    return false
-                }
-
+        
+            let attr = ["First Name", "Last Name", "Country", "Email"]//this is the attribute that i check
+            let id = ["name", "country", "email"]
+            let gettingTextFromPopUp = []
+            await this.openCorrectTable(user, searchBy)
+            await this.selenium.clickElement("className", "clientDetails")
+            for (let i in id) {
+                let element = await this.selenium.findElementBy("id", id[i])
+                gettingTextFromPopUp.push(await element.getAttribute("value"))
             }
-        }
-        return true
+            let name = gettingTextFromPopUp[0].split(" ")
+            gettingTextFromPopUp.splice(0, 1)
+            gettingTextFromPopUp.unshift(name[0], name[1])
+            let userDetails = await this.getCurrentTable(attr)//sending the attributes that we want get text from
+            
+            for(let j in attr)
+            {
+                if(gettingTextFromPopUp[j].toLowerCase() != userDetails[0][attr[j]].toLowerCase())
+                    return false
+            }
+            return true
     }
 
     //searching client and delete him
@@ -178,7 +175,8 @@ class ClientsPage {
         for (let j in currentTableAfterUpdate) {
             for (let i in update) {
                 if (update[i]) { //checking if there is update that we do if  there is  a update then we check the update According to the table
-                    if (update[i] != await this.getTextFromSpecificAttr(currentTableAfterUpdate[j], attr[i])) {
+                    let stringLowerCase = await this.getTextFromSpecificAttr(currentTableAfterUpdate[j], attr[i])
+                    if (update[i].toLowerCase() != stringLowerCase.toLowerCase()) {
                         return false
                     }
                 }
@@ -209,7 +207,7 @@ class ClientsPage {
     }
 
     //getting all the values of persons from current page
-    async getCurrentTable() {
+    async getCurrentTable(arrayOfAttribute) {
         let personDetail = {}
         let arrayOfPersons = []
         let personAttr = []
@@ -217,16 +215,14 @@ class ClientsPage {
         personAttr = await this._getRowsFromTable()//getting the attribute that showen at the table
         for (let i in colums) {
             let detailsOfPerson = await this.selenium.findElementListBy("tagName", "th", colums[i])
-            for (let j in personAttr) {
-                personDetail["'" + personAttr[j] + "'"] = await this.selenium.getTextFromElement(null, null, detailsOfPerson[j])
+            for (let j in arrayOfAttribute) {
+                personDetail[arrayOfAttribute[j]] = await this.selenium.getTextFromElement(null, null, detailsOfPerson[this.table[arrayOfAttribute[j]]])
 
             }
             arrayOfPersons.push(personDetail)
             personDetail = {}
         }
         console.table(arrayOfPersons)
-        let dropDownMenu = await this.selenium.findElementBy("className", "select-css")
-        await this.selenium.write("Name", null, null, dropDownMenu, null, true) //after getting all the persons from table we initliaze the dropdown
         return arrayOfPersons
     }
 
@@ -247,9 +243,9 @@ class ClientsPage {
 
     //clear element fields
     async clearEelementField() {
-        await this.selenium.clearElementField("xpath", "//input[@type='text']")
         let dropDownMenu = await this.selenium.findElementBy("className", "select-css")
         await this.selenium.write("Name", null, null, dropDownMenu)
+        await this.selenium.clearElementField("xpath", "//input[@type='text']")
     }
 
     //this function handleing the problem with search By NAME because at the table we have first name and last name attributes and we check if the input that we send is exist under this attribute
