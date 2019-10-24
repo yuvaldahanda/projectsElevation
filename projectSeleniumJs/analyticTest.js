@@ -35,7 +35,7 @@ class AnalyticTest {
             }
             counter = 0;
         }
-        console.log(item + "(" + max + "times)");
+        this.logger.info(item + "(" + max + "times)");
         return [item, max]
 
     }
@@ -47,9 +47,9 @@ class AnalyticTest {
         let result = await this.mostFrequentWord(arrayOfWords)
 
         if (hottestCountryAnlyticPage == result[0])
-            console.log("Test pass:the hottest country is " + result[0])
+            this.logger.info("Test pass:the hottest country is " + result[0])
         else {
-            console.log("Test fail:the hottest country is not the same as the result!!")
+            this.logger.info("Test fail:the hottest country is not the same as the result!!")
         }
 
     }
@@ -73,10 +73,10 @@ class AnalyticTest {
         await this.analyticsPage.navigateToAnalyticsPage()
         let emailSentNumAfterUpdate = await this.analyticsPage.getEmailSent()
         if (currentEmailSentNUm + 1 == emailSentNumAfterUpdate) {
-            console.log("Success  Added one to the email sent number")
+            this.logger.info("Success  Added one to the email sent number")
         }
         else {
-            console.log("one is not added to Email sent")
+            this.logger.info("one is not added to Email sent")
         }
 
     }
@@ -88,10 +88,10 @@ class AnalyticTest {
         await this.analyticsPage.navigateToAnalyticsPage()
         let numAfterUpdate = await this.analyticsPage.getOutStandingClient()
         if (numAfterUpdate == numOfOutStandingClient + 1) {
-            console.log("success added one to outstanig client")
+            this.logger.info("success added one to outstanig client")
         }
         else {
-            console.log("not added 1 to outstanding client")
+            this.logger.info("not added 1 to outstanding client")
         }
 
 

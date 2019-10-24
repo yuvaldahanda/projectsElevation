@@ -3,8 +3,7 @@ const { createLogger, format, transports } = require('winston');
 
 
 class Logger {
-    constructor(testName) {
-        this.date = new Date()
+    constructor(name) {
         this.logger = createLogger({
             level: 'debug',
             format: format.combine(
@@ -14,11 +13,12 @@ class Logger {
                 }),
                 format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`)
             ),
-            transports: [new transports.Console(),
-                        new transports.File({filename: '../allTheTests/'+this.date.getDay() +"."+ this.date.getMonth()+ "."+this.date.getFullYear()+'/'+testName+'.log' })]
+            transports: [new transports.Console()]
         });
     }
 }
 module.exports = Logger
-
-           
+let a = new Logger("bubu")
+a.logger.info('Hello world');
+a.logger.debug('Debugging info');
+            new winston.transports.File({ filename: '../allTheTests/'+this.date.getDay() +"."+ this.date.getMonth()+ "."+this.date.getFullYear()+'/'+testName+'.log' })

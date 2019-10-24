@@ -138,11 +138,11 @@ async function negativeTest() {
 
 }
 async function stability() {
-    await test.analyticTest()
-    for (let i = 0; i < 10; i++)
-        await clientPageTest.updateUser("Gross Paul", "Name", "Gross Paull", null, "brock@gmail.com")
-    for (let i = 0; i < 10; i++)
-        await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
+    // await clientPageTest.clientTest();
+    // for (let i = 0; i < 10; i++)
+    //     await clientPageTest.updateUser("Gross Paul", "Name", "Gross Paull", null, "brock@gmail.com")
+    // for (let i = 0; i < 10; i++)
+    //     await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
 }
 
 functionalTest()
