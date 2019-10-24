@@ -23,83 +23,66 @@ class ClientsPageTest {
     }
     //search client by name email owner .....
     async searchBy(input, searchBy) {
-        this.logger.info("==============  searchAndValidateClient ===================")
-        if (await this.clientsPage.searchAndValidateClient(input, searchBy))
-            this.logger.info(
-                "search by:" + searchBy + " " +
-                "input:" + input + " " +
-                "WOW AMAZING all the lines include -> " + input + " at the table")
-        else {
-            this.logger.info(
-                "search by:" + searchBy + " " +
-                "input:" + input + " " +
-                "the user does not exist")
+        if (await this.clientsPage.searchAndValidateClient(input, searchBy)) {
+            this.logger.info("Client Test:-> PASS -> " + input + " found at the table")
         }
-
-
+        else {
+            this.logger.info("Client Test:-> Fail -> " + input + " cannot found at the table")
+        }
         await this.clientsPage.clearEelementField()
     }
-
     //search user and then delete him
     async deleteUser(deleteUser, deleteBy) {
-        this.logger.info("==============  deleteUser ===================")
         if (await this.clientsPage.deleteClient(deleteUser, deleteBy)) {
-            this.logger.info("Test pass: the User "+deleteUser+" delete successfully!!")
+            this.logger.info("Client Test:-> PASS -> " + deleteUser + " client delete successfully!!")
         }
         else {
-            this.logger.info("Test Fail: User"+deleteUser+" not deleted")
+            this.logger.info("Client Test:-> Fail -> " + deleteUser + " client not deleted")
         }
         await this.clientsPage.clearEelementField()
-        
     }
-
-
     //update user details
     async updateUser(updateUser, searchBy, updateName, updateEmail, updateCountry) {
-        this.logger.info("==============  updateUser ===================")
         if (await this.clientsPage.updateClientAtClientPage(updateUser, searchBy, updateName, updateEmail, updateCountry))
-            this.logger.info("TEST PASS:update user"+updateUser+" success !!")
+            this.logger.info("Client Test:-> PASS -> " + updateUser + " update success !!")
         else {
-            this.logger.info("Failed to update user "+updateUser)
+            this.logger.info("Client Test:-> Fail -> " + updateUser + " update Failed")
         }
         await this.clientsPage.clearEelementField()
-        
+
     }
     // Is the data in the table the same as the pop-up message
     async isDetailTheSamePopUp(user, searchBy) {
-        this.logger.info("==============  isDetailTheSamePopUp ===================")
         if (await this.clientsPage.isDetailTheSamePopUp(user, searchBy)) {
-            this.logger.info("Test Pass:the details at the popUp are the same as the table")
+            this.logger.info("Client Test:-> PASS -> the details at the popUp are the same as the table")
         }
         else {
-            this.logger.info("Test fail:Details are not the same")
+            this.logger.info("Client Test:-> Fail -> Details are not the same")
         }
         await this.clientsPage.clearEelementField()
-        
+
     }
     //checking if the pop up exist aftr click
     async isPopUpExist() {
-        this.logger.info("==============  isPopUpExist ===================")
         if (await this.clientsPage.isPopUpExistAfterClick()) {
-            this.logger.info("Test Pass:popUp exist!")
+            this.logger.info("Client Test:-> PASS -> popUp exist!")
         }
         else {
-            this.logger.info("Test Fail: popUp not exist")
+            this.logger.info("Client Test:-> Fail -> popUp not exist")
         }
         await this.clientsPage.clearEelementField()
-        
+
     }
     //check if we can move between pages
     async moveBetweenPages(clickNext, clickPrevious, numOfPageAfterClicking) {
-        this.logger.info("==============  moveBetweenPages ===================")
         if (await this.clientsPage.isMoveBetweenPages(clickNext, clickPrevious, numOfPageAfterClicking)) {
-            this.logger.info("Test Pass:Pages can be swapped smoothly !")
+            this.logger.info("Client Test:-> PASS -> Pages can be swapped smoothly !")
         }
         else {
-            this.logger.info("Test Fail:Pages canot be swapped smoothly")
+            this.logger.info("Client Test:-> Fail -> Pages cannot be swapped smoothly")
         }
         await this.clientsPage.clearEelementField()
-        
+
     }
 
 }
@@ -108,23 +91,20 @@ let clientPageTest = new ClientsPageTest("clientTestResults")
 
 async function functionalTest() {
     await clientPageTest.clientTest();
-
-    //await clientPageTest.moveBetweenPages(6,4,3)
-    //  await clientPageTest.isPopUpExist()
-   // await clientPageTest.isDetailTheSamePopUp("Finch Robinson", "Name")
-    //     await clientPageTest.deleteUser("looolldo","Name")
-    //     await clientPageTest.updateUser("Gross Paul","Name","Gross Paull",null,"brock@gmail.com")
-    //     await clientPageTest.isPersonAttrExist(["First Name","Owner1","Last Name"])
-    //        await clientPageTest.searchBy("yes","Sold")
-         await clientPageTest.searchBy("jeanriddle@imant.com","Email")
-    //      await clientPageTest.searchBy("jeanriddle@imant.com","Email")
-    //     await clientPageTest.searchBy("bubu","Email")
-    //     await clientPageTest.searchBy("Mi22che22le22222","Name")
-    //    await clientPageTest.updateUser("Michele","Name","michele",null,"heyr")
-    //     await clientPageTest.isDetailTheSamePopUp("Sherri Pace", "Name")
-    //      await clientPageTest.updateUser("berg hobbs","Name","berg HOBBS","berg@gmail.com","malta2")
-
-
+    await clientPageTest.moveBetweenPages(6, 4, 3)
+    // await clientPageTest.isPopUpExist()
+    // await clientPageTest.isDetailTheSamePopUp("Finch Robinson", "Name")
+    // await clientPageTest.deleteUser("looolldo", "Name")
+    // await clientPageTest.updateUser("Gross Paul", "Name", "Gross Paull", null, "brock@gmail.com")
+    // await clientPageTest.isPersonAttrExist(["First Name", "Owner1", "Last Name"])
+    // await clientPageTest.searchBy("yes", "Sold")
+    await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
+    // await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
+    // await clientPageTest.searchBy("bubu", "Email")
+    // await clientPageTest.searchBy("Mi22che22le22222", "Name")
+    // await clientPageTest.updateUser("Michele", "Name", "michele", null, "heyr")
+    // await clientPageTest.isDetailTheSamePopUp("Sherri Pace", "Name")
+    // await clientPageTest.updateUser("berg hobbs", "Name", "berg HOBBS", "berg@gmail.com", "malta2")
 }
 async function negativeTest() {
     await clientPageTest.clientTest();

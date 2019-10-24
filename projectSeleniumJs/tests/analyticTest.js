@@ -2,7 +2,7 @@ const BasePage = require("../BasePage");
 const AnalitycPage = require("../analyticPage")
 const ClientPage = require('../ClientsPage')
 const ActionPage = require('../ActionsPage')
-const Logger = require('../../logger')
+
 
 
 class AnalyticTest {
@@ -11,10 +11,7 @@ class AnalyticTest {
         this.logger = this.testSelenium.logger
         this.analyticsPage = new AnalitycPage(this.testSelenium,this.logger)
         this.clientPage = new ClientPage(this.testSelenium,this.logger)
-        this.actionPage = new ActionPage(this.testSelenium,this.logger)
-        
-        
-    
+        this.actionPage = new ActionPage(this.testSelenium,this.logger) 
     }
 
     async analyticTest() {
@@ -49,9 +46,9 @@ class AnalyticTest {
         let result = await this.mostFrequentWord(arrayOfWords)
 
         if (hottestCountryAnlyticPage == result[0])
-            this.logger.info("Test pass:the hottest country is " + result[0])
+            this.logger.info("Analytic Test:-> PASS -> the hottest country is " + result[0])
         else {
-            this.logger.info("Test fail:the hottest country is not the same as the result!!")
+            this.logger.info("Analytic Test:-> Fail -> the hottest country is not the same as the result!!")
         }
 
     }
@@ -75,10 +72,10 @@ class AnalyticTest {
         await this.analyticsPage.navigateToAnalyticsPage()
         let emailSentNumAfterUpdate = await this.analyticsPage.getEmailSent()
         if (currentEmailSentNUm + 1 == emailSentNumAfterUpdate) {
-            this.logger.info("Success  Added one to the email sent number")
+            this.logger.info("Analytic Test:-> Pass -> Success  Added one to the email sent number")
         }
         else {
-            this.logger.info("one is not added to Email sent")
+            this.logger.info("Analytic Test:-> Fail -> one is not added to Email sent")
         }
 
     }
@@ -90,10 +87,10 @@ class AnalyticTest {
         await this.analyticsPage.navigateToAnalyticsPage()
         let numAfterUpdate = await this.analyticsPage.getOutStandingClient()
         if (numAfterUpdate == numOfOutStandingClient + 1) {
-            this.logger.info("success added one to outstanig client")
+            this.logger.info("Analytic Test:-> PASS -> success added one to outstanig client")
         }
         else {
-            this.logger.info("not added 1 to outstanding client")
+            this.logger.info("Analytic Test:-> Fail -> not added 1 to outstanding client")
         }
 
 

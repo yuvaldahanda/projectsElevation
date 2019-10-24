@@ -2,7 +2,7 @@ const BasePage = require("");
 const AnalitycPage = require("../analyticPage")
 const ClientPage = require('../ClientsPage')
 const ActionPage = require('../ActionsPage')
-const Logger = require('../../logger')
+const Logger = require('../logger')
 
 
 class AnalyticTest {

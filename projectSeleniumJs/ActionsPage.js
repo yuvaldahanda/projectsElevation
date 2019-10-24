@@ -13,11 +13,11 @@ class ActionPage {
     //check if the error pop up appear
     async iseErrorPopUpAppear() {
         if (await this.selenium.findElementBy("calssName", "error-pop-up")) {
-            console.log("error popUp appear")
+            this.logger.info("action Test:-> PASS -> error popUp appear")
             return true
         }
         else {
-            console.log("error pop up not appear")
+            this.logger.info("action Test:-> Fail -> error pop up not appear")
             return false
         }
     }
@@ -25,11 +25,11 @@ class ActionPage {
     //function that check if the pop up appear after update
     async isSuccessPopUpAppear() {
         if (await this.selenium.waitUntilElementExist("className", "success-pop-up")) {
-            console.log("Success update pop up")
+            this.logger.info("action Test:-> PASS -> Success update pop up")
             return true
         }
         else {
-            console.log("success update not appear")
+            this.logger.info("action Test:-> Fail -> success update not appear")
             return false
         }
     }
