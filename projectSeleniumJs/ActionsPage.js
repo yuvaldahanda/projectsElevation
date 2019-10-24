@@ -1,11 +1,9 @@
 
 class ActionPage {
 
-    constructor(selenium) {
-
+    constructor(selenium,logger) {
+        this.logger = logger
         this.selenium = selenium
-
-
     }
     async navigateToActionPage() {
         await this.selenium.getURL("https://lh-crm.herokuapp.com/actions")

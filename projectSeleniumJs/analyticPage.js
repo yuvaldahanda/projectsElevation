@@ -1,7 +1,8 @@
 
 
 class analyticPage {
-    constructor(selenium) {
+    constructor(selenium,logger) {
+        this.logger = logger
         this.selenium = selenium
     }
 

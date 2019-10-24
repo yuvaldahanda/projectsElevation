@@ -1,15 +1,16 @@
-const BasePage = require("./BasePage");
-const ActionPage = require("./ActionsPage")
-const ClientPage = require("./ClientsPage")
+const BasePage = require("../BasePage");
+const ActionPage = require("../ActionsPage")
+const ClientPage = require("../ClientsPage")
+const Logger = require("../../logger")
 
 
 class ActionTest {
 
-    constructor() {
+    constructor(name) {
         this.testSelenium = new BasePage().selenium
         this.actionPage = new ActionPage(this.testSelenium)
         this.clientPage = new ClientPage(this.testSelenium)
-
+        this.logger = new Logger(name).logger
     }
 
 
@@ -23,10 +24,10 @@ class ActionTest {
             await this.actionPage.addClient(firstName, lastName, country, owner, email)
             await this.clientPage.navigateToClientsPage()
             if (await this.clientPage.searchAndValidateClient(email, "Email")) {
-                console.log("user update successufuly!!!")
+                this.logger.info("user update successufuly!!!")
             }
             else {
-                console.log("The user does add at the action page, but it does not appear in the table")
+                this.logger.info("The user does add at the action page, but it does not appear in the table")
             }
     }
     //function that update the user owner or email type or both
@@ -38,10 +39,10 @@ class ActionTest {
                 if (updateDetails[keysOfUpdate[i]]) {
                     await this.clientPage.navigateToClientsPage()
                     if (await this.clientPage.searchAndValidateClient(updateDetails[keysOfUpdate[i]], keysOfUpdate[i])) {
-                        console.log("user updates successfully!!!")
+                        this.logger.info("user updates successfully!!!")
                     }
                     else {
-                        console.log("user update at action page but not at the table")
+                        this.logger.info("user update at action page but not at the table")
                     }
 
                 }

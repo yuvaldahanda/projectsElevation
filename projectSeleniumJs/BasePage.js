@@ -1,9 +1,10 @@
 const SeleniumInfra = require("./SeleniumInfra");
-
+const Logger = require("../logger")
 
 class BasePage {
-  constructor() {
-    this.selenium = new SeleniumInfra();
+  constructor(name) {
+    this.logger = new Logger(name).logger
+    this.selenium = new SeleniumInfra(this.logger); 
   }
 }
 
