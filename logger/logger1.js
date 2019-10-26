@@ -35,7 +35,7 @@ class Logger {
                     )
                 }),
                 new transports.File({
-                    filename: '../allTheTests/'+this.date.getDay() +"."+ this.date.getMonth()+ "."+this.date.getFullYear()+'/'+testName+'.log' ,
+                    filename: 'C:/Users/USER.USER-TOSH/Desktop/code/bootcamp/projectSeleniumJs/allTheTests/'+this.date.getDate() +"."+ this.date.getMonth()+ "."+this.date.getFullYear()+'/'+testName+'.log' ,
                     format: format.combine(
                         format.printf(
                             info =>

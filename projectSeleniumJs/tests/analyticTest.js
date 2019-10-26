@@ -107,7 +107,7 @@ async function functionalTest() {
 
     await test.analyticTest()
     // await test.getFrequentWordBySearchBy("yes","Sold","Country")
-    // await test.hottestCountry()
+       await test.hottestCountry()
     // await test.emailSent("Shauna Lindsay", "B")
     // await test.outStandingClient("Maynard Mcintosh", true) //true mean decleard as sold
 }
