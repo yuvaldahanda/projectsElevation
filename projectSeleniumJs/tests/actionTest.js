@@ -7,7 +7,7 @@ const ClientPage = require("../ClientsPage")
 class ActionTest {
 
     constructor(name) {
-        this.testSelenium = new BasePage().selenium
+        this.testSelenium = new BasePage(name).selenium
         this.logger = this.testSelenium.logger
         this.actionPage = new ActionPage(this.testSelenium, this.logger)
         this.clientPage = new ClientPage(this.testSelenium, this.logger)
@@ -28,6 +28,7 @@ class ActionTest {
         else {
             this.logger.info("action Test:-> Fail -> user not added")
         }
+        await this.actionPage.navigateToActionPage()
     }
     //function that update the user owner or email type or both
     async update(updateName, updateOwner, emailType) {
@@ -40,21 +41,22 @@ class ActionTest {
         else {
             this.logger.info("action Test:-> Fail -> user update at action page but not at the table")
         }
+        await this.actionPage.navigateToActionPage()
     }
 
 
 
 }
 
-let actionTest = new ActionTest()
+let actionTest = new ActionTest("resultTests")
 
 
 async function functionalTest() {
     await actionTest.actionTest()
     await actionTest.addClient("martin", "rodriges", "malta", "Mendoza Lott", "martin@gmail.com")
     await actionTest.update("Mendoza Lott", "Mendoza Lott", "B")
-    await actionTest.update("Mendoza Lott", "martin rodriges", "D")
-    await actionTest.update("Mendoza Lott", "martin rodriges", "A")
+    // await actionTest.update("Mendoza Lott", "martin rodriges", "D")
+    // await actionTest.update("Mendoza Lott", "martin rodriges", "A")
 }
 
 async function negativeTest() {
@@ -75,5 +77,5 @@ async function stability() {
 }
 
 functionalTest()
-negativeTest()
-stability()
+// negativeTest()
+// stability()

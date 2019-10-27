@@ -1,0 +1,12 @@
+2019-10-27 11:16:04 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 11:16:04 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 11:16:04 info [actionTest.js]: action Test:-> PASS -> Success update pop up
+2019-10-27 11:16:10 info [actionTest.js]: action Test:-> PASS -> user added successufuly!
+2019-10-27 11:16:14 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 11:16:14 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 11:16:14 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 11:16:14 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 11:16:14 info [actionTest.js]: action Test:-> PASS -> Success update pop up
+2019-10-27 11:16:17 error [actionTest.js]: Got error while trying to get text from element with null = null
+2019-10-27 11:16:17 error [actionTest.js]: undefined
+2019-10-27 11:16:18 info [actionTest.js]: action Test:-> PASS -> user updates successfully!!!

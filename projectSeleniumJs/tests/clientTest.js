@@ -84,10 +84,20 @@ class ClientsPageTest {
         await this.clientsPage.clearEelementField()
 
     }
+    async isAttributeExist(arrayOfAttr)
+    {
+        if(await this.clientsPage.isAttributeExist(arrayOfAttr))
+        {
+            this.logger.info("Client Test:-> PASS -> "+ arrayOfAttr +" is exist") 
+        }
+        else{
+            this.logger.info("Client Test:-> Fail -> "+ arrayOfAttr + "Attribute not exist")
+        }
+    }
 
 }
 
-let clientPageTest = new ClientsPageTest("clientTestResults")
+let clientPageTest = new ClientsPageTest("resultTests")
 
 async function functionalTest() {
     await clientPageTest.clientTest();
@@ -102,13 +112,13 @@ async function functionalTest() {
     // await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
     // await clientPageTest.searchBy("bubu", "Email")
     // await clientPageTest.searchBy("Mi22che22le22222", "Name")
-    // await clientPageTest.updateUser("Michele", "Name", "michele", null, "heyr")
-    // await clientPageTest.isDetailTheSamePopUp("Sherri Pace", "Name")
-    // await clientPageTest.updateUser("berg hobbs", "Name", "berg HOBBS", "berg@gmail.com", "malta2")
+     await clientPageTest.updateUser("Michele", "Name", "michele", null, "heyr")
+     await clientPageTest.isDetailTheSamePopUp("Mccarthy Neal", "Name")
+     await clientPageTest.updateUser("berg hobbs", "Name", "BERG HOBBS", "berg@gmail.com", "malta2")
 }
 async function negativeTest() {
     await clientPageTest.clientTest();
-    // await clientPageTest.isPersonAttrExist(["First Name","Owner1","Last Name"])
+     await clientPageTest.isAttributeExist(["First Name","Owner1","Last Name"])
     // await clientPageTest.searchBy(" ","Email")
     // await clientPageTest.searchBy("@","Email")
     // await clientPageTest.searchBy("Michele222","Name")
@@ -125,6 +135,6 @@ async function stability() {
     //     await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
 }
 
-functionalTest()
-// negativeTest()
+// functionalTest()
+  negativeTest()
 // stability()

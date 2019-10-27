@@ -1,0 +1,33 @@
+2019-10-27 11:17:52 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 11:17:52 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 11:17:52 info [actionTest.js]: action Test:-> PASS -> Success update pop up
+2019-10-27 11:17:58 info [actionTest.js]: action Test:-> PASS -> user added successufuly!
+2019-10-27 11:18:02 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 11:18:02 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 11:18:02 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 11:18:02 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 11:18:02 info [actionTest.js]: action Test:-> PASS -> Success update pop up
+2019-10-27 11:18:05 error [actionTest.js]: Got error while trying to get text from element with null = null
+2019-10-27 11:18:05 error [actionTest.js]: undefined
+2019-10-27 11:18:06 info [actionTest.js]: action Test:-> PASS -> user updates successfully!!!
+2019-10-27 12:52:04 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 12:52:04 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 12:52:04 info [actionTest.js]: action Test:-> PASS -> Success update pop up
+2019-10-27 12:52:08 error [actionTest.js]: Got error while trying to click on element with null = null
+2019-10-27 12:52:08 error [actionTest.js]: Got error while trying to find element with className = page
+2019-10-27 12:52:08 error [actionTest.js]: undefined
+2019-10-27 12:52:08 error [actionTest.js]: undefined
+2019-10-27 12:52:08 error [actionTest.js]: undefined
+2019-10-27 12:52:08 info [actionTest.js]: action Test:-> Fail -> user not added
+2019-10-27 12:57:18 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 12:57:18 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 12:57:18 info [actionTest.js]: action Test:-> PASS -> Success update pop up
+2019-10-27 12:57:24 info [actionTest.js]: action Test:-> PASS -> user added successufuly!
+2019-10-27 12:57:30 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 12:57:30 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 12:57:30 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 12:57:30 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 12:57:30 info [actionTest.js]: action Test:-> PASS -> Success update pop up
+2019-10-27 12:57:33 error [actionTest.js]: Got error while trying to get text from element with null = null
+2019-10-27 12:57:33 error [actionTest.js]: undefined
+2019-10-27 12:57:33 info [actionTest.js]: action Test:-> PASS -> user updates successfully!!!

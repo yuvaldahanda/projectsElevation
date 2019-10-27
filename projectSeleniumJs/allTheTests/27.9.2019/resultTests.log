@@ -1,0 +1,46 @@
+2019-10-27 13:17:38 info [clientTest.js]: Client Test:-> Fail -> First Name,Owner1,Last NameAttribute not exist
+2019-10-27 13:19:49 info [analyticTest.js]: France(266times)
+2019-10-27 13:19:49 info [analyticTest.js]: Analytic Test:-> PASS -> the hottest country is France
+2019-10-27 13:25:53 info [clientTest.js]: Client Test:-> Fail -> First Name,Owner1,Last NameAttribute not exist
+2019-10-27 13:29:32 info [clientTest.js]: Client Test:-> Fail -> First Name,Owner1,Last NameAttribute not exist
+2019-10-27 13:36:01 info [analyticTest.js]: France(266times)
+2019-10-27 13:36:01 info [analyticTest.js]: Analytic Test:-> PASS -> the hottest country is France
+2019-10-27 14:29:15 error [clientTest.js]: Got error while trying to find element with className = table-header-th
+2019-10-27 14:29:15 error [clientTest.js]: undefined
+2019-10-27 14:29:15 error [clientTest.js]: undefined
+2019-10-27 14:29:15 info [clientTest.js]: Client Test:-> Fail -> First Name,Owner1,Last NameAttribute not exist
+2019-10-27 14:29:16 error [actionTest.js]: Got error while trying to send keys to element with xpath = //input[@id='country']
+2019-10-27 14:29:16 error [actionTest.js]: Got error while trying to send keys to element with xpath = //input[@id='owner']
+2019-10-27 14:29:16 error [actionTest.js]: Got error while trying to send keys to element with xpath = //input[@id='email']
+2019-10-27 14:29:16 error [actionTest.js]: Got error while trying to click on element with xpath = //input[@value='Add']
+2019-10-27 14:29:16 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 14:29:16 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 14:29:16 error [actionTest.js]: undefined
+2019-10-27 14:29:16 info [actionTest.js]: action Test:-> Fail -> success update not appear
+2019-10-27 14:34:52 info [clientTest.js]: Client Test:-> Fail -> First Name,Owner1,Last NameAttribute not exist
+2019-10-27 14:43:59 info [clientTest.js]: Client Test:-> Fail -> First Name,Owner1,Last NameAttribute not exist
+2019-10-27 14:44:08 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 14:44:08 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 14:44:09 info [actionTest.js]: action Test:-> PASS -> Success update pop up
+2019-10-27 14:44:20 info [actionTest.js]: action Test:-> PASS -> user added successufuly!
+2019-10-27 14:44:29 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 14:44:29 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 14:44:31 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 14:44:31 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 14:44:31 info [actionTest.js]: action Test:-> PASS -> Success update pop up
+2019-10-27 14:44:39 error [actionTest.js]: Got error while trying to get text from element with null = null
+2019-10-27 14:44:39 error [actionTest.js]: undefined
+2019-10-27 14:44:40 info [actionTest.js]: action Test:-> PASS -> user updates successfully!!!
+2019-10-27 17:50:31 info [clientTest.js]: Client Test:-> Fail -> First Name,Owner1,Last NameAttribute not exist
+2019-10-27 17:50:33 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 17:50:33 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 17:50:34 info [actionTest.js]: action Test:-> PASS -> Success update pop up
+2019-10-27 17:50:40 info [actionTest.js]: action Test:-> PASS -> user added successufuly!
+2019-10-27 17:50:44 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 17:50:44 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 17:50:45 error [actionTest.js]: Got error while trying to find element with calssName = error-pop-up
+2019-10-27 17:50:45 info [actionTest.js]: action Test:-> Fail -> error pop up not appear
+2019-10-27 17:50:45 info [actionTest.js]: action Test:-> PASS -> Success update pop up
+2019-10-27 17:50:48 error [actionTest.js]: Got error while trying to get text from element with null = null
+2019-10-27 17:50:48 error [actionTest.js]: undefined
+2019-10-27 17:50:49 info [actionTest.js]: action Test:-> PASS -> user updates successfully!!!

@@ -103,7 +103,7 @@ class AnalyticTest {
 
 
 
-let test = new AnalyticTest("analytic Test")
+let test = new AnalyticTest("resultTests")
 
 async function functionalTest() {
 

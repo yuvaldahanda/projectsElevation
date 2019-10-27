@@ -1,0 +1,9 @@
+2019-10-27 09:45:30 info [clientTest.js]: Client Test:-> PASS -> Pages can be swapped smoothly !
+2019-10-27 09:45:33 info [clientTest.js]: Client Test:-> PASS -> jeanriddle@imant.com found at the table
+2019-10-27 09:45:40 info [clientTest.js]: Client Test:-> PASS -> Michele update success !!
+2019-10-27 09:45:43 info [clientTest.js]: Client Test:-> PASS -> the details at the popUp are the same as the table
+2019-10-27 09:45:45 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-27 09:45:53 info [clientTest.js]: Client Test:-> PASS -> berg hobbs update success !!
+2019-10-27 10:06:57 info [clientTest.js]: Client Test:-> Fail -> First Name,Owner1,Last NameAttribute not exist
+2019-10-27 11:03:26 info [clientTest.js]: Client Test:-> Fail -> First Name,Owner1,Last NameAttribute not exist
+2019-10-27 11:13:47 info [clientTest.js]: Client Test:-> Fail -> First Name,Owner1,Last NameAttribute not exist
