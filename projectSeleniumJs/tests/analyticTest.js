@@ -50,6 +50,7 @@ class AnalyticTest {
         else {
             this.logger.info("Analytic Test:-> Fail -> the hottest country is not the same as the result!!")
         }
+    await this.analyticsPage.navigateToAnalyticsPage()
 
     }
 
@@ -61,7 +62,8 @@ class AnalyticTest {
         await this.clientPage.openCorrectTable(input,searhBy)
         let arrayOfWords = await this.clientPage.getTextByAttribute(attribute)
         let result = await this.mostFrequentWord(arrayOfWords)
-
+        this.logger.info("Analytic Test:-> PASS -> the hottest country is " + result)
+        await this.analyticsPage.navigateToAnalyticsPage()
     }
 
     //function that update emailtype of person and then check if its update at analyticpage 
@@ -92,7 +94,7 @@ class AnalyticTest {
         else {
             this.logger.info("Analytic Test:-> Fail -> not added 1 to outstanding client")
         }
-
+        
 
     }
 
