@@ -20,6 +20,7 @@ class ClientsPage {
 
 
     async navigateToClientsPage() {
+     
         await this.selenium.getURL("https://lh-crm.herokuapp.com/client")
 
     }

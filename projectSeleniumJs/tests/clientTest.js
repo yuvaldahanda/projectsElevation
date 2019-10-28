@@ -27,7 +27,7 @@ class ClientsPageTest {
             this.logger.info("Client Test:-> PASS -> " + input + " found at the table")
         }
         else {
-            this.logger.info("Client Test:-> Fail -> " + input + " cannot found at the table")
+            this.logger.error("Client Test:-> Fail -> " + input + " cannot found at the table")
         }
         await this.clientsPage.clearEelementField()
     }
@@ -101,24 +101,24 @@ let clientPageTest = new ClientsPageTest("resultTests")
 
 async function functionalTest() {
     await clientPageTest.clientTest();
-    await clientPageTest.moveBetweenPages(6, 4, 3)
-    // await clientPageTest.isPopUpExist()
-    // await clientPageTest.isDetailTheSamePopUp("Finch Robinson", "Name")
-    // await clientPageTest.deleteUser("looolldo", "Name")
-    // await clientPageTest.updateUser("Gross Paul", "Name", "Gross Paull", null, "brock@gmail.com")
-    // await clientPageTest.isPersonAttrExist(["First Name", "Owner1", "Last Name"])
-    // await clientPageTest.searchBy("yes", "Sold")
-    await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
+    // await clientPageTest.moveBetweenPages(6, 4, 3)
+    // // await clientPageTest.isPopUpExist()
+    // // await clientPageTest.isDetailTheSamePopUp("Finch Robinson", "Name")
+    // // await clientPageTest.deleteUser("looolldo", "Name")
+    // // await clientPageTest.updateUser("Gross Paul", "Name", "Gross Paull", null, "brock@gmail.com")
+    // // await clientPageTest.isPersonAttrExist(["First Name", "Owner1", "Last Name"])
+    // // await clientPageTest.searchBy("yes", "Sold")
     // await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
-    // await clientPageTest.searchBy("bubu", "Email")
-    // await clientPageTest.searchBy("Mi22che22le22222", "Name")
-     await clientPageTest.updateUser("Michele", "Name", "michele", null, "heyr")
-     await clientPageTest.isDetailTheSamePopUp("Mccarthy Neal", "Name")
-     await clientPageTest.updateUser("berg hobbs", "Name", "BERG HOBBS", "berg@gmail.com", "malta2")
+    // // await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
+    // // await clientPageTest.searchBy("bubu", "Email")
+    // // await clientPageTest.searchBy("Mi22che22le22222", "Name")
+    //  await clientPageTest.updateUser("Michele", "Name", "michele", null, "heyr")
+    //  await clientPageTest.isDetailTheSamePopUp("Mccarthy Neal", "Name")
+    //  await clientPageTest.updateUser("berg hobbs", "Name", "BERG HOBBS", "berg@gmail.com", "malta2")
 }
 async function negativeTest() {
-    await clientPageTest.clientTest();
-     await clientPageTest.isAttributeExist(["First Name","Owner1","Last Name"])
+    // await clientPageTest.clientTest();
+    //  await clientPageTest.isAttributeExist(["First Name","Owner1","Last Name"])
     // await clientPageTest.searchBy(" ","Email")
     // await clientPageTest.searchBy("@","Email")
     // await clientPageTest.searchBy("Michele222","Name")
@@ -135,6 +135,6 @@ async function stability() {
     //     await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
 }
 
-// functionalTest()
-  negativeTest()
+functionalTest()
+//   negativeTest()
 // stability()
