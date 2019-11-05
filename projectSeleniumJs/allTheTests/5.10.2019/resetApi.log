@@ -1,0 +1,16 @@
+2019-11-05 14:36:07 info [reset.js]: Test Fail -> pokemon with type id and value 1is not exist
+2019-11-05 14:37:38 info [reset.js]: Test Fail -> pokemon with type id and value 1is not exist
+2019-11-05 14:38:32 info [reset.js]: Test Fail -> pokemon with type id and value 1is not exist
+2019-11-05 14:52:58 info [reset.js]: Test Fail -> pokemon with type id and value 1is not exist
+2019-11-05 14:53:58 info [reset.js]: Test PASS -> pokemon with type id and value 1is exist
+2019-11-05 14:54:05 info [reset.js]: Test PASS -> pokemon with type id and value 1is exist
+2019-11-05 15:11:36 info [reset.js]: Test Pass -> pokemon with type id and value 1is exist
+2019-11-05 15:17:25 info [reset.js]: Test Pass -> pokemon with type id and value 1is exist
+2019-11-05 15:29:57 info [reset.js]: Test Pass -> pokemon with type id and value 1 is exist
+2019-11-05 15:30:19 info [reset.js]: Test Pass -> pokemon with type id and value 1 is exist
+2019-11-05 16:53:50 info [reset.js]: Test PASS -> pokemon with id :158 name: dragonair type :dragonheight :123123weight: 1444444 has added
+2019-11-05 20:28:25 info [reset.js]: Test Pass -> pokemon with type name and value dragonair is exist
+2019-11-05 20:40:22 info [reset.js]: Test PASS -> pokemon with id :158 name: dragonair type :dragonheight :123123weight: 1444444 has added
+2019-11-05 21:17:23 info [reset.js]: Test PASS -> the type has changed to-123123 and value has changed to 1444444
+2019-11-05 21:36:38 info [reset.js]: Test Pass -> the pokemon with id and value 3 deleted
+2019-11-05 21:36:52 info [reset.js]: Test Pass -> the pokemon with id and value 4 deleted

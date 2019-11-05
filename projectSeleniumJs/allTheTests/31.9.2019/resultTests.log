@@ -1,0 +1,59 @@
+﻿2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to find element with className = page
+2019-10-31 22:46:18 error [clientTest.js]: undefined
+2019-10-31 22:46:18 error [clientTest.js]: undefined
+2019-10-31 22:46:18 error [clientTest.js]: undefined
+2019-10-31 22:46:18 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to Clear text from element with id = name
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with id = name
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to Clear text from element with id = email
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with id = email
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with xpath = //input[@value='Update Client']
+2019-10-31 22:46:18 error [clientTest.js]: undefined
+2019-10-31 22:46:18 info [clientTest.js]: Client Test:-> Fail -> Michele update Failed
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to find element with id = name
+2019-10-31 22:46:18 error [clientTest.js]: cant click on something that does not exist
+2019-10-31 22:46:18 info [clientTest.js]: Client Test:-> Fail -> Details are not the same
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to Clear text from element with id = name
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with id = name
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to Clear text from element with id = country
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with id = country
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to Clear text from element with id = email
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with id = email
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to click on element with xpath = //input[@value='Update Client']
+2019-10-31 22:46:18 error [clientTest.js]: undefined
+2019-10-31 22:46:18 info [clientTest.js]: Client Test:-> Fail -> berg hobbs update Failed
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-31 22:46:18 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']

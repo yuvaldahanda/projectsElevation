@@ -105,16 +105,16 @@ async function functionalTest() {
     // // await clientPageTest.isPopUpExist()
     // // await clientPageTest.isDetailTheSamePopUp("Finch Robinson", "Name")
     // // await clientPageTest.deleteUser("looolldo", "Name")
-    // // await clientPageTest.updateUser("Gross Paul", "Name", "Gross Paull", null, "brock@gmail.com")
-    // // await clientPageTest.isPersonAttrExist(["First Name", "Owner1", "Last Name"])
-    // // await clientPageTest.searchBy("yes", "Sold")
+    // await clientPageTest.updateUser("Gross Paul", "Name", "Gross Paull", null, "brock@gmail.com")
+    // await clientPageTest.isPersonAttrExist(["First Name", "Owner1", "Last Name"])
+    // await clientPageTest.searchBy("yes", "Sold")
+    await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
     // await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
-    // // await clientPageTest.searchBy("jeanriddle@imant.com", "Email")
-    // // await clientPageTest.searchBy("bubu", "Email")
-    // // await clientPageTest.searchBy("Mi22che22le22222", "Name")
-    //  await clientPageTest.updateUser("Michele", "Name", "michele", null, "heyr")
-    //  await clientPageTest.isDetailTheSamePopUp("Mccarthy Neal", "Name")
-    //  await clientPageTest.updateUser("berg hobbs", "Name", "BERG HOBBS", "berg@gmail.com", "malta2")
+    // await clientPageTest.searchBy("bubu", "Email")
+    // await clientPageTest.searchBy("Mi22che22le22222", "Name")
+     await clientPageTest.updateUser("Michele", "Name", "michele", null, "heyr")
+     await clientPageTest.isDetailTheSamePopUp("Mccarthy Neal", "Name")
+     await clientPageTest.updateUser("berg hobbs", "Name", "BERG HOBBS", "berg@gmail.com", "malta2")
 }
 async function negativeTest() {
     // await clientPageTest.clientTest();
@@ -136,5 +136,5 @@ async function stability() {
 }
 
 functionalTest()
-//   negativeTest()
+// negativeTest()
 // stability()

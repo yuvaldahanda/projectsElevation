@@ -1,0 +1,20 @@
+﻿2019-11-03 16:20:30 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-11-03 16:20:42 info [clientTest.js]: Client Test:-> PASS -> Michele update success !!
+2019-11-03 16:20:45 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-11-03 16:20:45 error [clientTest.js]: Got error while trying to find element with id = name
+2019-11-03 16:20:45 error [clientTest.js]: cant click on something that does not exist
+2019-11-03 16:20:45 info [clientTest.js]: Client Test:-> Fail -> Details are not the same
+2019-11-03 16:42:19 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-11-03 16:42:26 info [clientTest.js]: Client Test:-> PASS -> Michele update success !!
+2019-11-03 16:42:28 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-11-03 16:42:28 error [clientTest.js]: Got error while trying to find element with id = name
+2019-11-03 16:42:28 error [clientTest.js]: cant click on something that does not exist
+2019-11-03 16:42:28 info [clientTest.js]: Client Test:-> Fail -> Details are not the same
+2019-11-03 16:42:38 info [clientTest.js]: Client Test:-> PASS -> berg hobbs update success !!
+2019-11-03 16:43:56 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-11-03 16:44:03 info [clientTest.js]: Client Test:-> PASS -> Michele update success !!
+2019-11-03 16:44:04 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-11-03 16:44:04 error [clientTest.js]: Got error while trying to find element with id = name
+2019-11-03 16:44:04 error [clientTest.js]: cant click on something that does not exist
+2019-11-03 16:44:04 info [clientTest.js]: Client Test:-> Fail -> Details are not the same
+2019-11-03 16:44:11 info [clientTest.js]: Client Test:-> PASS -> berg hobbs update success !!

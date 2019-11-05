@@ -2,3 +2,930 @@
 2019-10-28 13:49:17 error [clientTest.js]: error
 2019-10-28 13:50:50 info [clientTest.js]: info
 2019-10-28 13:50:50 error [clientTest.js]: error
+2019-10-28 20:41:32 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-10-28 20:42:14 info [clientTest.js]: Client Test:-> PASS -> Michele update success !!
+2019-10-28 20:42:25 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 20:42:25 error [clientTest.js]: Got error while trying to find element with id = name
+2019-10-28 20:42:25 error [clientTest.js]: cant click on something that does not exist
+2019-10-28 20:42:25 info [clientTest.js]: Client Test:-> Fail -> Details are not the same
+2019-10-28 20:43:07 info [clientTest.js]: Client Test:-> PASS -> berg hobbs update success !!
+2019-10-28 21:27:13 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-10-28 21:27:20 info [clientTest.js]: Client Test:-> PASS -> Michele update success !!
+2019-10-28 21:27:20 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 21:27:20 error [clientTest.js]: Got error while trying to find element with id = name
+2019-10-28 21:27:20 error [clientTest.js]: cant click on something that does not exist
+2019-10-28 21:27:20 info [clientTest.js]: Client Test:-> Fail -> Details are not the same
+2019-10-28 21:27:26 info [clientTest.js]: Client Test:-> PASS -> berg hobbs update success !!
+2019-10-28 21:31:12 error [analyticTest.js]: Got error while trying to find element with className = page
+2019-10-28 21:31:12 error [analyticTest.js]: undefined
+2019-10-28 21:31:12 error [analyticTest.js]: undefined
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to find element with className = page
+2019-10-28 21:31:13 error [clientTest.js]: undefined
+2019-10-28 21:31:13 error [clientTest.js]: undefined
+2019-10-28 21:31:13 error [clientTest.js]: undefined
+2019-10-28 21:31:13 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to Clear text from element with id = name
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to send keys to element with id = name
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to Clear text from element with id = email
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to send keys to element with id = email
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to click on element with xpath = //input[@value='Update Client']
+2019-10-28 21:31:13 error [clientTest.js]: undefined
+2019-10-28 21:31:13 info [clientTest.js]: Client Test:-> Fail -> Michele update Failed
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to find element with id = name
+2019-10-28 21:31:13 error [clientTest.js]: cant click on something that does not exist
+2019-10-28 21:31:13 info [clientTest.js]: Client Test:-> Fail -> Details are not the same
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 21:31:13 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to Clear text from element with id = name
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to send keys to element with id = name
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to Clear text from element with id = country
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to send keys to element with id = country
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to Clear text from element with id = email
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to send keys to element with id = email
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to click on element with xpath = //input[@value='Update Client']
+2019-10-28 21:31:14 error [clientTest.js]: undefined
+2019-10-28 21:31:14 info [clientTest.js]: Client Test:-> Fail -> berg hobbs update Failed
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 21:31:14 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 21:52:55 error [analyticTest.js]: undefined
+2019-10-28 21:52:55 error [analyticTest.js]: Got error while trying to find element with className = badge-val
+2019-10-28 21:52:59 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to find element with className = page
+2019-10-28 22:00:47 error [clientTest.js]: undefined
+2019-10-28 22:00:47 error [clientTest.js]: undefined
+2019-10-28 22:00:47 error [clientTest.js]: undefined
+2019-10-28 22:00:47 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to Clear text from element with id = name
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with id = name
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to Clear text from element with id = email
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with id = email
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with xpath = //input[@value='Update Client']
+2019-10-28 22:00:47 error [clientTest.js]: undefined
+2019-10-28 22:00:47 info [clientTest.js]: Client Test:-> Fail -> Michele update Failed
+2019-10-28 22:00:47 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:00:47 error [analyticTest.js]: undefined
+2019-10-28 22:00:47 error [analyticTest.js]: Got error while trying to find element with tagName = th
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:00:47 error [analyticTest.js]: undefined
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to find element with id = name
+2019-10-28 22:00:47 error [clientTest.js]: cant click on something that does not exist
+2019-10-28 22:00:47 info [clientTest.js]: Client Test:-> Fail -> Details are not the same
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to Clear text from element with id = name
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with id = name
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to Clear text from element with id = country
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with id = country
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to Clear text from element with id = email
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with id = email
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to click on element with xpath = //input[@value='Update Client']
+2019-10-28 22:00:47 error [clientTest.js]: undefined
+2019-10-28 22:00:47 info [clientTest.js]: Client Test:-> Fail -> berg hobbs update Failed
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:00:47 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:04:34 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to Clear text from element with id = name
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with id = name
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to Clear text from element with id = email
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with id = email
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to click on element with xpath = //input[@value='Update Client']
+2019-10-28 22:04:34 error [clientTest.js]: undefined
+2019-10-28 22:04:34 info [clientTest.js]: Client Test:-> Fail -> Michele update Failed
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to find element with id = name
+2019-10-28 22:04:34 error [clientTest.js]: cant click on something that does not exist
+2019-10-28 22:04:34 info [clientTest.js]: Client Test:-> Fail -> Details are not the same
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to Clear text from element with id = name
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with id = name
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to Clear text from element with id = country
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with id = country
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to Clear text from element with id = email
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with id = email
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to click on element with xpath = //input[@value='Update Client']
+2019-10-28 22:04:34 error [clientTest.js]: undefined
+2019-10-28 22:04:34 info [clientTest.js]: Client Test:-> Fail -> berg hobbs update Failed
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:04:34 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:40 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:05:40 error [analyticTest.js]: undefined
+2019-10-28 22:05:46 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 22:05:52 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:05:52 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:05:52 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:05:52 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:05:58 error [clientTest.js]: Got error while trying to find element with className = page
+2019-10-28 22:05:58 error [clientTest.js]: undefined
+2019-10-28 22:05:58 error [clientTest.js]: undefined
+2019-10-28 22:05:58 error [clientTest.js]: undefined
+2019-10-28 22:05:58 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-10-28 22:06:04 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:06:04 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:06:10 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:06:14 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 22:06:20 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:06:20 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:06:20 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:06:20 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:40:40 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to find element with className = page
+2019-10-28 22:40:57 error [clientTest.js]: undefined
+2019-10-28 22:40:57 error [clientTest.js]: undefined
+2019-10-28 22:40:57 info [clientTest.js]: Client Test:-> PASS -> Michele update success !!
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to find element with id = name
+2019-10-28 22:40:57 error [clientTest.js]: cant click on something that does not exist
+2019-10-28 22:40:57 info [clientTest.js]: Client Test:-> Fail -> Details are not the same
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to send keys to element with xpath = //input[@type='text']
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to click on element with null = null
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to Clear text from element with id = name
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to send keys to element with id = name
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to Clear text from element with id = country
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to send keys to element with id = country
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to Clear text from element with id = email
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to send keys to element with id = email
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to click on element with xpath = //input[@value='Update Client']
+2019-10-28 22:40:57 error [clientTest.js]: undefined
+2019-10-28 22:40:57 info [clientTest.js]: Client Test:-> Fail -> berg hobbs update Failed
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to find element with className = select-css
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to send keys to element with null = null
+2019-10-28 22:40:57 error [clientTest.js]: Got error while trying to Clear text from element with xpath = //input[@type='text']
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with tagName = th
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:40:59 error [analyticTest.js]: undefined
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with tagName = th
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:40:59 error [analyticTest.js]: undefined
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with tagName = th
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:40:59 error [analyticTest.js]: undefined
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with tagName = th
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:40:59 error [analyticTest.js]: undefined
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with tagName = th
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:40:59 error [analyticTest.js]: undefined
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with tagName = th
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to get text from element with null = null
+2019-10-28 22:40:59 error [analyticTest.js]: undefined
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:40:59 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to find element with className = clientDetails
+2019-10-28 22:41:00 error [analyticTest.js]: Got error while trying to click on element with xpath = //img[@name='next']
+2019-10-28 22:41:00 info [analyticTest.js]: Turkey(16times)
+2019-10-28 22:41:00 info [analyticTest.js]: Analytic Test:-> Fail -> the hottest country is not the same as the result!!
+2019-10-28 22:42:31 error [clientTest.js]: Client Test:-> Fail -> jeanriddle@imant.com cannot found at the table
+2019-10-28 22:42:45 info [clientTest.js]: Client Test:-> PASS -> Michele update success !!
+2019-10-28 22:42:49 error [clientTest.js]: Got error while trying to click on element with className = clientDetails
+2019-10-28 22:42:49 error [clientTest.js]: Got error while trying to find element with id = name
+2019-10-28 22:42:49 error [clientTest.js]: cant click on something that does not exist
+2019-10-28 22:42:49 info [clientTest.js]: Client Test:-> Fail -> Details are not the same
+2019-10-28 22:43:07 info [clientTest.js]: Client Test:-> PASS -> berg hobbs update success !!
